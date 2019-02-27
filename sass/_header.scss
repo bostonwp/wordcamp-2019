@@ -1,0 +1,184 @@
+.page-navigation-container {
+	position: relative;
+	z-index: 1;
+	background: $fuchsia;
+
+	.menu-primary-nav-container {
+		@include container;
+		position: relative;
+	}
+
+	a {
+		padding: 30px 20px;
+		color: $white;
+		@include uppercase( 1.8, 1.5 );
+		line-height: 1;
+		font-weight: 900;
+	}
+
+	li:hover,
+	li.focus {
+		background: $white;
+
+		a {
+			color: $fuchsia;
+			text-decoration: none;
+		}
+	}
+
+	ul ul {
+		top: 78px;
+		background: $white;
+		padding: 10px 0 20px;
+
+		a {
+			padding: 8px 30px;
+			color: $fuchsia;
+			width: 17em;
+		}
+
+		li:hover,
+		li.focus {
+			a {
+				color: $dark-blue;
+				margin-left: -15px;
+
+				&:before {
+					display: inline-block;
+					content: '\25cf';
+					width: 13px;
+					margin-right: 2px;
+				}
+			}
+		}
+	}
+
+	.callout {
+		position: absolute;
+		right: 0;
+		background: $dark-blue;
+
+		a {
+			padding: 30px 50px;
+		}
+
+		&:hover,
+		&.focus {
+			background: $tangerine;
+
+			a {
+				color: $dark-blue;
+			}
+		}
+	}
+
+	@media ( min-width: $size-main-width ) {
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: calc( 50vw + #{$size-main-width/2} );
+			background: $dark-blue;
+		}
+	}
+}
+
+// We aren't using this
+#site-navigation {
+	display: none !important;
+}
+
+.js .menu-toggle {
+	width: 100%;
+}
+
+@media screen and ( max-width: 37.5em ) {
+	.js .dropdown-toggle {
+		display: none;
+	}
+
+	.page-navigation-container {
+		li {
+			display: block;
+			float: none;
+		}
+
+		li:hover,
+		li.focus {
+			background: transparent;
+
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+
+		a:focus {
+			background: $white;
+			color: $fuchsia !important;
+		}
+
+		a {
+			padding: 10px !important;
+		}
+
+		ul ul {
+			display: block;
+			float: none;
+			position: static;
+			padding: 0 0 0 15px;
+			box-shadow: none;
+			background: transparent;
+
+			a {
+				width: 100%;
+				color: $white;
+			}
+		}
+
+		.callout {
+			position: static;
+			width: 100%;
+			background: $teal;
+
+			a {
+				color: $dark-blue;
+			}
+		}
+	}
+}
+
+.custom-header {
+	background: $dark-blue;
+	position: relative;
+
+	.wp-custom-header,
+	.custom-logo-link {
+		display: block;
+		margin: 0 auto;
+		padding: 140px 0 300px;
+		max-width: 600px;
+	}
+}
+
+/* Try a smaller logo on interior pages */
+body:not(.home) {
+	.custom-header {
+		.wp-custom-header,
+		.custom-logo-link {
+			padding-top: 100px;
+			padding-bottom: 130px;
+			max-width: 500px;
+		}
+
+		&:before {
+			height: 150px;
+		}
+
+		&:after {
+			height: 200px;
+		}
+	}
+}

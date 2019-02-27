@@ -1,0 +1,84 @@
+body:not(.home) .site-main {
+	@include container( $size-post-width );
+	padding: 0 20px;
+}
+
+.hentry + .hentry {
+	margin-top: 60px;
+}
+
+.page-header {
+	margin: 40px auto 20px;
+}
+
+.page-title {
+	margin-bottom: 10px;
+}
+
+.entry-header,
+.entry-footer {
+	@include font-size( $font-size-small );
+
+	span + span {
+		margin-left: 8px;
+	}
+
+	.byline {
+		display: none;
+
+		body.single & {
+			display: inline;
+			margin-left: 4px;
+		}
+	}
+}
+
+.entry-title {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: $fuchsia;
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+.entry-summary {
+	margin: 20px 0;
+}
+
+.entry-content {
+	margin: 20px 0 0;
+}
+
+.post-navigation {
+	border-top: 1px solid $tiffany-blue;
+	border-bottom: 1px solid $tiffany-blue;
+	padding: 10px 0;
+	@include font-size( $font-size-small );
+
+	a {
+		color: $color-text;
+
+		@include hover-state {
+			color: $color-text;
+		}
+	}
+
+	.nav-previous:before {
+		content: '\2190';
+		margin-right: 4px;
+	}
+
+	.nav-next:after {
+		content: '\2192';
+		margin-left: 4px;
+	}
+}
+
+@import 'content/home';
+@import 'content/404';
+@import 'content/contact';
+@import 'content/organizers';
+@import 'content/tickets';
+@import 'content/schedule';
+@import 'content/attendees';
+@import 'content/day-of';

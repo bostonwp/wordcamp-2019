@@ -1,0 +1,85 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+@mixin hover-state {
+	&:hover, &:active, &:focus {
+		@content;
+	}
+}
+
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin light-on-dark() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin uppercase( $sizeValue: false, $letterSpace: 1 ) {
+	@if ( $sizeValue ) {
+		@include font-size( $sizeValue );
+	}
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: $letterSpace * 1px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin container( $width: $size-main-width ) {
+	margin: 0 auto;
+	max-width: $width;
+}
+
+@mixin sr-clip() {
+	clip: rect( 1px, 1px, 1px, 1px );
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+@mixin button( $bg: $teal, $text: $color-text ) {
+	@include font-size( $font-size-level-3 );
+	line-height: 1;
+	font-weight: 900;
+	text-align: center;
+	text-decoration: none;
+	color: $text;
+	background: $bg;
+
+	@include hover-state {
+		$shadow: mix( black, $bg, 60% );
+		box-shadow: 0 2px 7px 2px rgba( $shadow, 0.2),
+					0 1px 1px 0 rgba( $shadow, 0.1);
+	}
+
+	&:focus {
+		outline: 2px solid $text;
+	}
+}
+
+@mixin input-placeholder {
+	::-webkit-input-placeholder {
+		@content;
+	}
+	::-moz-placeholder {
+		@content;
+	}
+	:-ms-input-placeholder {
+		@content;
+	}
+	:-moz-placeholder {
+		@content;
+	}
+}

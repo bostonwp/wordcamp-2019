@@ -1,0 +1,15 @@
+body.page-template-page-day-of {
+	.site-main {
+		@include container( $size-main-width );
+		margin-top: -60px;
+	}
+
+	.entry-content h2 {
+		@include font-size( $font-size-level-1 );
+		color: $fuchsia;
+	}
+
+	.entry-content h3 {
+		@include font-size( $font-size-level-2 );
+	}
+}
