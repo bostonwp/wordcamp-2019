@@ -4,11 +4,9 @@
 	@include font-size( $font-size-small );
 
 	a {
-		color: $dark-blue;
 		text-decoration: underline;
 
 		@include hover-state {
-			color: $fuchsia;
 		}
 	}
 

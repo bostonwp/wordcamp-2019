@@ -1,11 +1,9 @@
 #footer-widget-1 {
-	background: $dark-blue;
 	margin: 120px 0 60px;
 	padding: 120px 20px;
 
 	.widget-title {
 		margin-top: 0;
-		color: white;
 		@include font-size( $font-size-level-2 );
 		line-height: 1.2;
 		text-align: center;
@@ -13,8 +11,6 @@
 
 	.widget {
 		@include container( $size-post-width );
-
-		color: $white;
 	}
 
 	form {

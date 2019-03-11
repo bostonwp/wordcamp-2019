@@ -37,12 +37,10 @@
 	.comment-reply-link {
 		display: inline-block;
 		padding: 10px 20px;
-		@include button( $tangerine );
 		@include uppercase( $font-size-small );
 	}
 
 	.thread-even .comment-reply-link {
-		@include button( $ugly-yellow );
 		@include uppercase( $font-size-small );
 	}
 }

@@ -1,7 +1,6 @@
 .page-navigation-container {
 	position: relative;
 	z-index: 1;
-	background: $fuchsia;
 
 	.menu-primary-nav-container {
 		@include container;
@@ -21,7 +20,6 @@
 		background: $white;
 
 		a {
-			color: $fuchsia;
 			text-decoration: none;
 		}
 	}
@@ -33,14 +31,12 @@
 
 		a {
 			padding: 8px 30px;
-			color: $fuchsia;
 			width: 17em;
 		}
 
 		li:hover,
 		li.focus {
 			a {
-				color: $dark-blue;
 				margin-left: -15px;
 
 				&:before {
@@ -56,7 +52,6 @@
 	.callout {
 		position: absolute;
 		right: 0;
-		background: $dark-blue;
 
 		a {
 			padding: 30px 50px;
@@ -64,10 +59,8 @@
 
 		&:hover,
 		&.focus {
-			background: $tangerine;
 
 			a {
-				color: $dark-blue;
 			}
 		}
 	}
@@ -80,14 +73,8 @@
 			bottom: 0;
 			right: 0;
 			left: calc( 50vw + #{$size-main-width/2} );
-			background: $dark-blue;
 		}
 	}
-}
-
-// We aren't using this
-#site-navigation {
-	display: none !important;
 }
 
 .js .menu-toggle {
@@ -117,7 +104,6 @@
 
 		a:focus {
 			background: $white;
-			color: $fuchsia !important;
 		}
 
 		a {
@@ -141,44 +127,9 @@
 		.callout {
 			position: static;
 			width: 100%;
-			background: $teal;
 
 			a {
-				color: $dark-blue;
 			}
-		}
-	}
-}
-
-.custom-header {
-	background: $dark-blue;
-	position: relative;
-
-	.wp-custom-header,
-	.custom-logo-link {
-		display: block;
-		margin: 0 auto;
-		padding: 140px 0 300px;
-		max-width: 600px;
-	}
-}
-
-/* Try a smaller logo on interior pages */
-body:not(.home) {
-	.custom-header {
-		.wp-custom-header,
-		.custom-logo-link {
-			padding-top: 100px;
-			padding-bottom: 130px;
-			max-width: 500px;
-		}
-
-		&:before {
-			height: 150px;
-		}
-
-		&:after {
-			height: 200px;
 		}
 	}
 }

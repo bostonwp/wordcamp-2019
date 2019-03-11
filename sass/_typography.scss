@@ -25,12 +25,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-header;
 }
 
+h1 {
+	font-family: $font-fancy;
+}
+
 .wp-block-separator,
 hr {
 	height: 2px;
 	max-width: 66%;
 	border-bottom: 0;
-	background-color: $fuchsia;
+	background-color: $green-silver;
 }
 
 
@@ -50,12 +54,13 @@ img {
 }
 
 a, a:visited {
-	color: $fuchsia;
+	color: currentColor;
 	text-decoration: none;
+	border-bottom: 2px solid $orange;
 
 	@include hover-state {
-		color: darken( $fuchsia, 5% );
-		text-decoration: underline;
+		color: $auburn;
+		border-bottom: 2px solid $auburn;
 	}
 }
 
@@ -76,6 +81,9 @@ a, a:visited {
 	}
 	h3 {
 		@include font-size( $font-size-level-3 );
+	}
+	h4 {
+		@include font-size( $font-size-level-4 );
 		line-height: 1.2;
 	}
 }
@@ -94,9 +102,8 @@ textarea {
 	line-height: 1;
 	color: $color-text;
 	background: $white;
-	border: 1px solid $cloudy-blue;
-	border-radius: 2px;
-	box-shadow: inset 0 1px 2px 0 rgba( black, 0.15 );
+	border: none;
+	box-shadow: none;
 
 	@include input-placeholder {
 		color: rgba( $color-text, 0.5 );
@@ -161,12 +168,12 @@ a.cta-button {
 
 .entry-content .wp-block-button__link {
 	border-radius: 0;
-	@include button( $teal, $color-text );
+	@include button( $orange, $color-text );
 	@include uppercase( 1.8 );
 
 	@include hover-state {
 		color: $color-text;
-		background: $teal;
+		background: $auburn;
 	}
 }
 

@@ -49,7 +49,7 @@
 	overflow: hidden;
 }
 
-@mixin button( $bg: $teal, $text: $color-text ) {
+@mixin button( $bg: $orange, $text: $color-text ) {
 	@include font-size( $font-size-level-3 );
 	line-height: 1;
 	font-weight: 900;

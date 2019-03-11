@@ -6,11 +6,11 @@ body.page-slug-schedule {
 
 .wcpt-schedule {
 	margin-bottom: 60px;
-	border-bottom: 2px solid $ugly-yellow;
+	border-bottom: 2px solid currentColor;
 
 	th {
 		padding: 20px 15px 5px;
-		border-bottom: 2px solid $ugly-yellow;
+		border-bottom: 2px solid currentColor;
 		color: $color-text;
 		font-weight: 900;
 		text-align: left;
@@ -20,7 +20,7 @@ body.page-slug-schedule {
 		@include font-size( 1.6 );
 		box-sizing: border-box;
 		padding: 20px 15px;
-		border: 2px solid $ugly-yellow;
+		border: 2px solid currentColor;
 		border-bottom: none;
 
 		@media screen and (min-width: 701px) {
@@ -29,7 +29,6 @@ body.page-slug-schedule {
 			&.wcpt-time {
 				width: 11%;
 				@include font-size( 1.4 );
-				background: rgba( $ugly-yellow, 0.1 );
 			}
 		}
 
@@ -45,21 +44,17 @@ body.page-slug-schedule {
 			border: none;
 
 			&:last-of-type {
-				border-right: 2px solid $ugly-yellow;
+				border-right: 2px solid currentColor;
 			}
 		}
 
 		&.wcb-favourite-session {
-			background: rgba( $ugly-yellow, 0.15 );
-
 			a.fav-session-button {
-				color: $fuchsia;
 			}
 		}
 
 		div.wcb-session-favourite-icon a.fav-session-button {
 			&:hover {
-				color: $fuchsia !important;
 			}
 		}
 	}
@@ -105,7 +100,7 @@ body.page-slug-schedule {
 
 		tr {
 			border: none;
-			border-bottom: 2px solid $ugly-yellow;
+			border-bottom: 2px solid currentColor;
 		}
 
 		td.wcpt-session-empty {
@@ -126,7 +121,6 @@ body.page-slug-schedule {
 		line-height: 1;
 		color: $color-text;
 		border: none;
-		background: rgba( $ugly-yellow, 0.4 );
 		text-align: center;
 	}
 
