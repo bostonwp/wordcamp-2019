@@ -23,23 +23,16 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: none;
 	font-family: $font-header;
+	font-weight: 500;
 }
 
 h1 {
 	font-family: $font-fancy;
 }
 
-.wp-block-separator,
-hr {
-	height: 2px;
-	max-width: 66%;
-	border-bottom: 0;
-	background-color: $green-silver;
-}
-
-
-p {
-	margin: 0 0 15px;
+p,
+div[class*="wp-block-"] {
+	margin: 0 0 20px;
 }
 
 ul, ol {
@@ -56,11 +49,11 @@ img {
 a, a:visited {
 	color: currentColor;
 	text-decoration: none;
-	border-bottom: 2px solid $orange;
+	border-bottom: 2px solid $orange-400;
 
 	@include hover-state {
-		color: $auburn;
-		border-bottom: 2px solid $auburn;
+		color: $orange-600;
+		border-bottom: 2px solid $orange-600;
 	}
 }
 
@@ -77,12 +70,17 @@ a, a:visited {
 		@include font-size( $font-size-level-1 );
 	}
 	h2 {
+		color: $blue-600;
 		@include font-size( $font-size-level-2 );
 	}
 	h3 {
+		color: $color-meta;
+		font-weight: 700;
 		@include font-size( $font-size-level-3 );
 	}
 	h4 {
+		font-family: $font-body;
+		font-weight: 700;
 		@include font-size( $font-size-level-4 );
 		line-height: 1.2;
 	}
@@ -156,28 +154,27 @@ button,
 a.cta-button {
 	display: inline-block;
 	margin: 0;
-	padding: 12px 20px 15px;
-	border-radius: 0;
+	padding: 16px 40px;
 	border: none;
 	text-shadow: none;
 	box-shadow: none;
 
 	@include button;
-	@include uppercase( 1.8 );
+	@include uppercase( 1.6 );
 }
 
 .entry-content .wp-block-button__link {
-	border-radius: 0;
-	@include button( $orange, $color-text );
+	@include button-secondary;
 	@include uppercase( 1.8 );
 
 	@include hover-state {
-		color: $color-text;
-		background: $auburn;
+		color: $white;
+		background: $orange-600;
 	}
 }
 
-.wp-caption {
+.wp-caption,
+.wp-block-image {
 	border: none;
 	margin-bottom: 1em;
 
@@ -186,8 +183,91 @@ a.cta-button {
 		max-width: 100%;
 	}
 
+	figcaption,
 	.wp-caption-text {
 		margin: 10px 0 8px;
-		text-align: left;
+		color: $color-meta;
+		@include font-size( $font-size-small );
+	}
+}
+
+hr,
+.wp-block-separator {
+	margin: 30px auto 50px;
+	height: 2px;
+	max-width: 66%;
+	border-bottom: 0;
+	background-color: $grey-200;
+
+	&.is-style-dots {
+		height: 50px;
+		background: transparent url( "#{$svg-border}" ) no-repeat center;
+		&:before {
+			content: '';
+		}
+	}
+}
+
+.wp-block-quote {
+	margin: 0 0 20px;
+	padding-left: 20px;
+	border-left: 4px solid $blue-600;
+
+	p:last-of-type {
+		margin-bottom: 0px;
+	}
+
+	cite {
+		color: $color-meta;
+		font-style: normal;
+		@include uppercase( 1.2 );
+
+		&:before {
+			content: '— ';
+		}
+	}
+
+	&.is-style-large {
+		margin: 0 0 20px;
+		border-left: none;
+
+		p {
+			color: $blue-600;
+			font-family: $font-header;
+			font-weight: 500;
+			font-style: normal;
+			@include font-size( 5.0 );
+		}
+
+		cite {
+			@include font-size( 1.2 );
+		}
+	}
+}
+
+.wp-block-pullquote {
+	p {
+		font-family: $font-fancy;
+		font-weight: 400;
+		@include font-size( 5.0 );
+		color: $color-text;
+	}
+
+	cite {
+		color: $color-meta;
+		font-style: normal;
+		@include uppercase( 1.2 );
+
+		&:before {
+			content: '— ';
+		}
+	}
+}
+
+.wp-block-cover {
+	.wp-block-cover-text {
+		font-family: $font-fancy;
+		font-weight: 400;
+		@include font-size( 10.0 );
 	}
 }

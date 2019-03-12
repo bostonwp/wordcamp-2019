@@ -29,9 +29,11 @@
 	@if ( $sizeValue ) {
 		@include font-size( $sizeValue );
 	}
-	font-weight: bold;
+	font-family: $font-button;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: $letterSpace * 1px;
+	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -49,23 +51,44 @@
 	overflow: hidden;
 }
 
-@mixin button( $bg: $orange, $text: $color-text ) {
-	@include font-size( $font-size-level-3 );
-	line-height: 1;
-	font-weight: 900;
+@mixin button {
 	text-align: center;
 	text-decoration: none;
-	color: $text;
-	background: $bg;
+	color: $white;
+	background: $blue-600;
+	border: 4px solid $blue-600;
+	border-radius: 5px;
 
 	@include hover-state {
-		$shadow: mix( black, $bg, 60% );
-		box-shadow: 0 2px 7px 2px rgba( $shadow, 0.2),
-					0 1px 1px 0 rgba( $shadow, 0.1);
+		background: $blue-700;
+		border-color: $blue-700;
 	}
 
 	&:focus {
-		outline: 2px solid $text;
+		$innerborder: 3px;
+		outline: none;
+		box-shadow: inset $innerborder 0 0 0 $blue-200,
+		            inset $innerborder*-1 0 0 0 $blue-200,
+		            inset 0 $innerborder*-1 0 0 $blue-200,
+		            inset 0 $innerborder 0 0 $blue-200;
+	}
+}
+@mixin button-secondary {
+	@include button;
+	background: $orange-400;
+	border-color: $orange-400;
+
+	@include hover-state {
+		background: $orange-600;
+		border-color: $orange-600;
+	}
+
+	&:focus {
+		$innerborder: 3px;
+		box-shadow: inset $innerborder 0 0 0 $orange-200,
+		            inset $innerborder*-1 0 0 0 $orange-200,
+		            inset 0 $innerborder*-1 0 0 $orange-200,
+		            inset 0 $innerborder 0 0 $orange-200;
 	}
 }
 

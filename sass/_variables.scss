@@ -4,8 +4,9 @@ $size-post-width: 780px;
 $bkpt-phone: 450px;
 $bkpt-tablet: 800px;
 
-$font-body: "acumin-pro", sans-serif;
-$font-header: "acumin-pro-condensed",sans-serif;
+$font-body: "acumin-pro", sans-serif; // 400, 400i, 700, 700i
+$font-header: "acumin-pro-condensed", sans-serif; // 500, 700
+$font-button: "acumin-pro-wide", sans-serif; // 700
 $font-fancy: "Unica One",sans-serif;
 
 $font-size-body: 2.0;
@@ -15,16 +16,29 @@ $font-size-level-3: 3.6;
 $font-size-level-4: 2.0;
 $font-size-small: 1.6;
 
+// White/grey/black
 $white: #ffffff;
-$bright-blue: #41D2FF;
-$wp-blue: #0073AA;
-$ocean-blue: #005F8C;
-$orange: #DE541E;
-$auburn: #9E2D00;
-$pale-grey: #F5F9F7;
-$green-silver: #BCD0C7;
-$silver: #A9B2AC;
-$grey: #898980;
+$grey-100: #F5F9F7;
+$grey-200: #BCD0C7;
+$grey-400: #A9B2AC;
+$grey-600: #898980;
+
+// Blues
+$blue-200: #BCEFFF;
+$blue-400: #41D2FF;
+$blue-600: #0073AA;
+$blue-700: #005F8C;
+
+// Oranges
+$orange-200: #FA8F66;
+$orange-400: #DE541E;
+$orange-600: #9E2D00;
+
+// Browns
 $brown: #452F35;
 
 $color-text: $brown;
+$color-meta: $grey-600;
+
+// Images
+$svg-border: "http://boston.wordcamp.test/wp-content/themes/boston-2019/assets/border.svg";
