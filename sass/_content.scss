@@ -1,10 +1,36 @@
-body:not(.home) .site-main {
+.site-main {
 	@include container( $size-post-width );
-	padding: 0 20px;
+	padding: 0 80px;
 }
 
-.hentry + .hentry {
-	margin-top: 60px;
+body.page {
+	.site-main {
+		width: 100%;
+		padding: 0;
+	}
+
+	.entry-title {
+		@include banner-bg( $size-post-width );
+		@include font-size( $font-size-level-1 );
+		font-family: $font-fancy;
+		line-height: 0.9;
+		font-weight: 400;
+		color: $white;
+
+		&:before {
+			background-image: url( "#{$svg-w}" );
+			background-size: 1000px auto;
+			background-repeat: no-repeat;
+			background-position: 52vw -160px;
+		}
+	}
+
+	.entry-summary,
+	.entry-content {
+		@include container( $size-post-width );
+		margin-bottom: 20px;
+		padding: 0 80px;
+	}
 }
 
 .page-header {
@@ -12,11 +38,37 @@ body:not(.home) .site-main {
 }
 
 .page-title {
-	margin-bottom: 10px;
+	@include banner-bg( $size-post-width );
+	@include font-size( $font-size-level-1 );
+	line-height: 0.9;
+	font-weight: 400;
+	color: $white;
+
+	&:before {
+		background-image: url( "#{$svg-w}" );
+		background-size: 1000px auto;
+		background-repeat: no-repeat;
+		background-position: 52vw -160px;
+	}
 }
 
-.entry-header,
+.entry-title {
+	margin-bottom: 20px;
+	@include font-size( $font-size-level-2 );
+	font-family: $font-header;
+	font-weight: 500;
+	color: $blue-600;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin-top: 0;
+}
+
+.entry-meta,
 .entry-footer {
+	margin-bottom: 20px;
 	@include font-size( $font-size-small );
 
 	span + span {
@@ -31,22 +83,6 @@ body:not(.home) .site-main {
 			margin-left: 4px;
 		}
 	}
-}
-
-.entry-title {
-	margin-top: 0;
-	margin-bottom: 20px;
-	color: $white;
-	line-height: 1.1;
-	background: $brown;
-}
-
-.entry-summary {
-	margin: 20px 0;
-}
-
-.entry-content {
-	margin: 20px 0 0;
 }
 
 .post-navigation {

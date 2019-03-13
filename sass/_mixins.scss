@@ -43,6 +43,25 @@
 	max-width: $width;
 }
 
+@mixin banner-bg( $width: $size-main-width, $color: $brown ) {
+	position: relative;
+	@include container( $width );
+	padding: 80px;
+	margin-top: 0;
+	margin-bottom: 80px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: calc( ( 50vw - #{ $width/2 } ) * -1 );
+		width: 100vw;
+		bottom: 0;
+		background: $color;
+	}
+}
+
 @mixin sr-clip() {
 	clip: rect( 1px, 1px, 1px, 1px );
 	position: absolute !important;

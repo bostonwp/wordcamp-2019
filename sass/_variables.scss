@@ -1,6 +1,6 @@
 $size-max-width: 1440px;
-$size-main-width: 1160px;
-$size-post-width: 780px;
+$size-main-width: 1000px;
+$size-post-width: 830px;
 
 $bkpt-phone: 450px;
 $bkpt-tablet: 800px;
@@ -8,7 +8,7 @@ $bkpt-tablet: 800px;
 $font-body: "acumin-pro", sans-serif; // 400, 400i, 700, 700i
 $font-header: "acumin-pro-condensed", sans-serif; // 500, 700
 $font-button: "acumin-pro-wide", sans-serif; // 700
-$font-fancy: "Unica One",sans-serif;
+$font-fancy: "Unica One",sans-serif; // 400
 
 $font-size-body: 2.0;
 $font-size-level-1: 10.0;
@@ -43,3 +43,4 @@ $color-meta: $grey-600;
 
 // Images
 $svg-border: "http://boston.wordcamp.test/wp-content/themes/boston-2019/assets/border.svg";
+$svg-w: "http://boston.wordcamp.test/wp-content/themes/boston-2019/assets/w.svg";
