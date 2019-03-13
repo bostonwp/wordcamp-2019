@@ -27,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   clear: none;
   font-family: "acumin-pro-condensed", sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1.2; }
 
 h1 {
   font-family: "Unica One", sans-serif; }
@@ -338,6 +339,7 @@ hr,
   font-weight: 400;
   font-size: 50px;
   font-size: 5rem;
+  line-height: 1;
   color: #452F35; }
 
 .wp-block-pullquote cite {
@@ -359,7 +361,8 @@ hr,
   font-family: "Unica One", sans-serif;
   font-weight: 400;
   font-size: 100px;
-  font-size: 10rem; }
+  font-size: 10rem;
+  line-height: 1; }
 
 .site-header {
   position: relative;
@@ -508,113 +511,97 @@ hr,
       font-size: 36px;
       font-size: 3.6rem; } }
 
-#primary-sidebar {
-  margin-top: 60px;
-  overflow: hidden; }
-  #primary-sidebar .widget-title {
-    font-size: 100px;
-    font-size: 10rem;
-    line-height: 1.2;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 60px; }
-  #primary-sidebar .widget_custom_html {
-    margin: 30px -10px 90px; }
-  #primary-sidebar .custom-html-widget {
-    margin: 0 auto;
-    max-width: 830px;
-    padding: 60px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center; }
-    #primary-sidebar .custom-html-widget .label {
-      font-family: "acumin-pro-condensed", sans-serif;
-      font-size: 50px;
-      font-size: 5rem;
-      line-height: 1.1; }
-      #primary-sidebar .custom-html-widget .label.span-2 {
-        grid-column: 1 / span 2; }
-    #primary-sidebar .custom-html-widget a {
-      display: inline-block;
-      padding: 20px 30px;
-      font-family: "acumin-pro", sans-serif;
-      font-size: 16px;
-      font-size: 1.6rem;
-      font-family: "acumin-pro-wide", sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
-      #primary-sidebar .custom-html-widget a:hover, #primary-sidebar .custom-html-widget a:active, #primary-sidebar .custom-html-widget a:focus {
-        -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(0, 0, 0, 0.2), 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.1);
-                box-shadow: 0 2.5px 7.5px 2.5px rgba(0, 0, 0, 0.2), 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.1); }
-    @media screen and (max-width: 800px) {
-      #primary-sidebar .custom-html-widget {
-        grid-template-columns: 1fr;
-        grid-gap: 30px 0;
-        padding-left: 20px;
-        padding-right: 20px; } }
-  #primary-sidebar .wcb_widget_sponsors {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 0 40px; }
-    #primary-sidebar .wcb_widget_sponsors .sponsor-level.bronze, #primary-sidebar .wcb_widget_sponsors .sponsor-level.silver, #primary-sidebar .wcb_widget_sponsors .sponsor-level.small-business, #primary-sidebar .wcb_widget_sponsors .sponsor-level.consultant,
-    #primary-sidebar .wcb_widget_sponsors .sponsor-level .sponsor-level-title {
-      display: none; }
-    #primary-sidebar .wcb_widget_sponsors .sponsor-level {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 30px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      @media screen and (max-width: 800px) {
-        #primary-sidebar .wcb_widget_sponsors .sponsor-level {
-          grid-template-columns: repeat(2, 1fr); } }
-      @media screen and (max-width: 450px) {
-        #primary-sidebar .wcb_widget_sponsors .sponsor-level {
-          grid-template-columns: 1fr; } }
-    #primary-sidebar .wcb_widget_sponsors .sponsor-logo {
-      padding: 0; }
+#primary-sidebar .widget-title {
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-size: 5rem;
+  text-align: center; }
 
-#footer-widget-1 {
-  margin: 120px 0 60px;
-  padding: 120px 20px; }
-  #footer-widget-1 .widget-title {
-    margin-top: 0;
-    font-size: 50px;
-    font-size: 5rem;
-    line-height: 1.2;
-    text-align: center; }
-  #footer-widget-1 .widget {
-    margin: 0 auto;
-    max-width: 830px; }
-  #footer-widget-1 form {
+#primary-sidebar .mock_subscription_widget {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 80px;
+  margin-top: 0;
+  margin-bottom: 80px; }
+  #primary-sidebar .mock_subscription_widget:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: calc( ( 50vw - 500px ) * -1);
+    width: 100vw;
+    bottom: 0;
+    background: #452F35; }
+  #primary-sidebar .mock_subscription_widget:before {
+    background: #A9B2AC; }
+  #primary-sidebar .mock_subscription_widget form {
     display: grid;
     grid-template-columns: 1fr 200px; }
     @media screen and (max-width: 450px) {
-      #footer-widget-1 form {
+      #primary-sidebar .mock_subscription_widget form {
         grid-template-columns: 1fr; } }
-    #footer-widget-1 form input {
-      border-radius: 0; }
-    #footer-widget-1 form p {
-      margin-bottom: 0; }
-  #footer-widget-1 #subscribe-email input {
-    width: 100%; }
-  #footer-widget-1 #subscribe-text {
+  #primary-sidebar .mock_subscription_widget #subscribe-email {
+    margin-right: 40px; }
+  #primary-sidebar .mock_subscription_widget #subscribe-email input {
+    width: 100%;
+    padding: 15px 20px 16px; }
+  #primary-sidebar .mock_subscription_widget #subscribe-text {
     grid-column: 1 / span 2; }
     @media screen and (max-width: 450px) {
-      #footer-widget-1 #subscribe-text {
+      #primary-sidebar .mock_subscription_widget #subscribe-text {
         grid-column: 1; } }
-  #footer-widget-1 input[type="submit"] {
+  #primary-sidebar .mock_subscription_widget input[type="submit"] {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: #0073AA;
+    border: 4px solid #0073AA;
+    border-radius: 5px;
+    background: #DE541E;
+    border-color: #DE541E; }
+    #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+      background: #005F8C;
+      border-color: #005F8C; }
+    #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+      outline: none;
+      -webkit-box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF;
+              box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF; }
+    #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+      background: #9E2D00;
+      border-color: #9E2D00; }
+    #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+      -webkit-box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66;
+              box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66; }
+
+#primary-sidebar .wcb_widget_sponsors {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 40px;
+  margin-bottom: 80px; }
+  #primary-sidebar .wcb_widget_sponsors .sponsor-level.bronze, #primary-sidebar .wcb_widget_sponsors .sponsor-level.silver, #primary-sidebar .wcb_widget_sponsors .sponsor-level.small-business, #primary-sidebar .wcb_widget_sponsors .sponsor-level.consultant,
+  #primary-sidebar .wcb_widget_sponsors .sponsor-level .sponsor-level-title {
+    display: none; }
+  #primary-sidebar .wcb_widget_sponsors .widget-title {
+    color: #0073AA; }
+  #primary-sidebar .wcb_widget_sponsors .sponsor-level {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media screen and (max-width: 800px) {
+      #primary-sidebar .wcb_widget_sponsors .sponsor-level {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (max-width: 450px) {
+      #primary-sidebar .wcb_widget_sponsors .sponsor-level {
+        grid-template-columns: 1fr; } }
+  #primary-sidebar .wcb_widget_sponsors .sponsor-logo {
+    padding: 0;
+    border-bottom: none; }
 
 .site-main {
   margin: 0 auto;

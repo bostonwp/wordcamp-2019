@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: none;
 	font-family: $font-header;
 	font-weight: 500;
+	line-height: 1.2;
 }
 
 h1 {
@@ -258,6 +259,7 @@ hr,
 		font-family: $font-fancy;
 		font-weight: 400;
 		@include font-size( 5.0 );
+		line-height: 1;
 		color: $color-text;
 	}
 
@@ -277,5 +279,6 @@ hr,
 		font-family: $font-fancy;
 		font-weight: 400;
 		@include font-size( 10.0 );
+		line-height: 1;
 	}
 }
