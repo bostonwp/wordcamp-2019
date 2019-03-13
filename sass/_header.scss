@@ -1,33 +1,57 @@
-.page-navigation-container {
+.site-header {
 	position: relative;
-	z-index: 1;
+	z-index: 100;
+	@include container( $size-max-width );
+	padding: 60px 40px;
+	display: flex;
+	justify-content: space-between;
+}
 
-	.menu-primary-nav-container {
-		@include container;
-		position: relative;
+.custom-header {
+	width: 174px;
+	flex: 1 0 174px;
+
+	.custom-logo-link {
+		display: block;
+		border-bottom: none !important;
+	}
+
+	img {
+		height: 50px;
+		width: 174px;
+	}
+}
+
+.page-navigation-container {
+	.menu-primary-container > ul {
+		display: flex;
+		justify-content: flex-end;
+
+		& > li {
+			float: none;
+		}
 	}
 
 	a {
-		padding: 30px 20px;
-		color: $white;
-		@include uppercase( 1.8, 1.5 );
+		padding: 16px 20px;
+		@include uppercase( 1.8, 1 );
 		line-height: 1;
 		font-weight: 900;
+		border-bottom: none;
 	}
 
 	li:hover,
 	li.focus {
-		background: $white;
-
 		a {
 			text-decoration: none;
 		}
 	}
 
 	ul ul {
-		top: 78px;
+		top: 50px;
 		background: $white;
 		padding: 10px 0 20px;
+		box-shadow: none;
 
 		a {
 			padding: 8px 30px;
@@ -50,29 +74,16 @@
 	}
 
 	.callout {
-		position: absolute;
-		right: 0;
-
 		a {
-			padding: 30px 50px;
+			padding: 16px 50px;
+			color: $orange-600;
 		}
 
 		&:hover,
 		&.focus {
-
 			a {
+				color: $orange-400;
 			}
-		}
-	}
-
-	@media ( min-width: $size-main-width ) {
-		&:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: calc( 50vw + #{$size-main-width/2} );
 		}
 	}
 }
@@ -82,13 +93,30 @@
 }
 
 @media screen and ( max-width: 37.5em ) {
+	.site-header {
+		display: block;
+
+		.custom-header {
+			margin: 0 auto 40px;
+		}
+	}
+
+	// Dropdowns are shown by default, so we don't need this.
 	.js .dropdown-toggle {
 		display: none;
 	}
 
 	.page-navigation-container {
-		li {
+		.menu-primary-container > ul {
+			display: none;
+			margin-top: 40px;
+		}
+
+		&.toggled-on .menu-primary-container > ul {
 			display: block;
+		}
+
+		li {
 			float: none;
 		}
 
@@ -97,17 +125,14 @@
 			background: transparent;
 
 			a {
-				color: $white;
 				text-decoration: none;
 			}
 		}
 
-		a:focus {
-			background: $white;
-		}
-
 		a {
 			padding: 10px !important;
+
+			&:focus {}
 		}
 
 		ul ul {
@@ -120,15 +145,6 @@
 
 			a {
 				width: 100%;
-				color: $white;
-			}
-		}
-
-		.callout {
-			position: static;
-			width: 100%;
-
-			a {
 			}
 		}
 	}
