@@ -64,11 +64,11 @@ function boston_2019_force_widgets() {
 		'content' =>
 			'<div class="social-links-row">' .
 			'	<ul>' .
-			'		<li><a href="https://twitter.com/wordcampboston">twitter: @wordcampboston</a></li>' .
-			'		<li><a href="https://facebook.com">WordCamp Boston facebook page</a></li>' .
-			'		<li><a href="https://youtube.com">WordCamp Boston youtube channel</a></li>' .
-			'		<li><a href="https://meetup.com">Boston WordPress meetup</a></li>' .
-			'		<li><a href="https://bostonwp.org">BostonWP.org</a></li>' .
+			'		<li><a class="icon-twitter" href="https://twitter.com/wordcampboston">twitter: @wordcampboston</a></li>' .
+			'		<li><a class="icon-facebook" href="https://facebook.com">WordCamp Boston facebook page</a></li>' .
+			'		<li><a class="icon-youtube" href="https://youtube.com">WordCamp Boston youtube channel</a></li>' .
+			'		<li><a class="icon-meetup" href="https://meetup.com">Boston WordPress meetup</a></li>' .
+			'		<li><a class="icon-wp" href="https://bostonwp.org">BostonWP.org</a></li>' .
 			'	</ul>' .
 			'</div>' .
 			'<p>Proudly Powered by WordPress</p>' .

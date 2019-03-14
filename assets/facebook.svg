@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-1183.000000, -6864.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-Copy" transform="translate(0.000000, 6764.000000)">
+                <g id="Group-9" transform="translate(392.000000, 0.000000)">
+                    <g id="Group-8" transform="translate(675.000000, 87.000000)">
+                        <g id="Group-4" transform="translate(71.000000, 13.000000)">
+                            <path d="M67.676,0 L46.324,0 C45.593,0 45,0.593 45,1.324 L45,22.676 C45,23.408 45.593,24 46.324,24 L57.818,24 L57.818,14.706 L54.689,14.706 L54.689,11.085 L57.818,11.085 L57.818,8.41 C57.818,5.311 59.712,3.625 62.477,3.625 C63.802,3.625 64.941,3.722 65.273,3.766 L65.273,7.006 L63.352,7.006 C61.852,7.006 61.56,7.727 61.56,8.777 L61.56,11.088 L65.144,11.088 L64.679,14.718 L61.56,14.718 L61.56,24 L67.675,24 C68.408,24 69,23.408 69,22.676 L69,1.324 C69,0.593 68.408,0 67.676,0" id="facebook"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

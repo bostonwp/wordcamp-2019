@@ -1,18 +1,3 @@
 .site-info {
-	padding: 0 0 60px;
-	text-align: center;
-	@include font-size( $font-size-small );
-
-	a {
-		text-decoration: underline;
-
-		@include hover-state {
-		}
-	}
-
-	.site-info-generator:after {
-		display: block;
-		content: '';
-		height: 16px;
-	}
+	display: none;
 }
