@@ -6,7 +6,7 @@
 	}
 
 	.mock_subscription_widget {
-		@include banner-bg( $size-main-width );
+		@include banner-bg( $size-post-width + 160px );
 
 		&:before {
 			background: $grey-400;

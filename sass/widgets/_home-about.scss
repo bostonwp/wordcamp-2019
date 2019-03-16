@@ -1,0 +1,7 @@
+#content-widget-2 {
+	.widget-title {
+		color: $blue-600;
+		@include font-size( $font-size-level-2 );
+		margin-bottom: 40px;
+	}
+}

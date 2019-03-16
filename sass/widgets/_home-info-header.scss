@@ -1,0 +1,52 @@
+#content-widget-1 {
+	.level-1 {
+		font-family: $font-fancy;
+		@include font-size( $font-size-level-1 );
+		line-height: 0.9;
+		font-weight: 400;
+	}
+
+	.level-2 {
+		@include font-size( $font-size-level-2 );
+		font-family: $font-header;
+		font-weight: 500;
+		color: $orange-400;
+	}
+
+	.level-3 {
+		@include font-size( 4.8 );
+		font-family: $font-header;
+		font-weight: 500;
+		color: $blue-400;
+	}
+
+	.level-4 {
+		margin-top: 60px;
+		@include font-size( 2.4 );
+		font-family: $font-button;
+		font-weight: 700;
+		color: $white;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 30px;
+	}
+
+	@media screen and ( max-width: $bkpt-phone ) {
+		.level-1 {
+			@include font-size( $font-size-level-2 );
+		}
+
+		.level-2 {
+			@include font-size( $font-size-level-3 );
+		}
+	}
+
+	.button-row a:nth-of-type(2) {
+		@include button-secondary;
+		margin-left: 20px;
+	}
+}
