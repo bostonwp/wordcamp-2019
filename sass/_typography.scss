@@ -70,6 +70,7 @@ a, a:visited {
 	}
 	h1 {
 		@include font-size( $font-size-level-1 );
+		line-height: 1;
 	}
 	h2 {
 		color: $blue-600;

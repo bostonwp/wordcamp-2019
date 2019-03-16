@@ -4,6 +4,10 @@
 	.hentry {
 		padding: 0 80px;
 	}
+
+	.hentry + .hentry {
+		margin-top: 80px;
+	}
 }
 
 body.page {
@@ -61,6 +65,10 @@ body.page {
 	font-family: $font-header;
 	font-weight: 500;
 	color: $blue-600;
+
+	a {
+		border-bottom: none;
+	}
 }
 
 .page-content,

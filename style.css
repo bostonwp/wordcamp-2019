@@ -64,7 +64,8 @@ a, a:visited {
 
 .entry-content h1 {
   font-size: 100px;
-  font-size: 10rem; }
+  font-size: 10rem;
+  line-height: 1; }
 
 .entry-content h2 {
   color: #0073AA;
@@ -732,6 +733,8 @@ body.home #content-widget-2 .widget-title {
   max-width: 830px; }
   .site-main .hentry {
     padding: 0 80px; }
+  .site-main .hentry + .hentry {
+    margin-top: 80px; }
 
 body.page .site-main {
   width: 100%;
@@ -809,6 +812,8 @@ body.page .entry-content {
   font-family: "acumin-pro-condensed", sans-serif;
   font-weight: 500;
   color: #0073AA; }
+  .entry-title a {
+    border-bottom: none; }
 
 .page-content,
 .entry-content,
