@@ -39,17 +39,22 @@ function boston_2019_force_widgets() {
 	$banner = array(
 		'title' => '',
 		'content' =>
-			'<div class="level-1">Celebrating 10 years</div>' .
+			'<div class="level-1">Celebrating<br />10&nbsp;years</div>' .
 			'<div class="level-2">2010-2019</div>' .
 			'<div class="level-4">Dates</div>' .
 			'<div class="level-3">July 21-22nd 2019</div>' .
 			'<div class="level-4">Location</div>' .
 			'<div class="level-3">Boston University</div>' .
 			'<div class="level-4">Price</div>' .
-			'<div class="level-3">$50</div>' .
+			'<div class="level-3">$50</div>',
+		'filter' => false,
+	);
+	$buttons = array(
+		'title' => '',
+		'content' =>
 			'<div class="button-row">' .
-			'	<a href="#" class="button">Register</a>' .
-			'	<a href="#" class="button">Volunteer</a>' .
+			'	<a href="#" class="cta-button">Register</a>' .
+			'	<a href="#" class="cta-button">Volunteer</a>' .
 			'</div>',
 		'filter' => false,
 	);
@@ -105,6 +110,22 @@ EOF;
 		'filter' => false,
 	);
 
+	$home_learn = array(
+		'title' => 'Learn about WordPress',
+		'content' => '<p>WordCamp Boston is an inclusive event by and for WordPress enthusiasts, hobbyists, and tinkerers. We have lecture-style sessions, panels, and workshops about WordPress and the tech industry from speakers near and far. Past topics have included growing your business, making your WordPress site secure, building a site with Divi, scoping big projects, and using the WordPress REST API.</p>',
+		'filter' => false,
+	);
+	$home_friends = array(
+		'title' => 'Make new friends',
+		'content' => '<p>If sitting in talks all day isn’t your thing, we also have an open area where you can chat with other WordPress users, and a volunteer-staffed help desk for your questions. We take breaks often, so you’ll have ample opportunity to chat with your fellow attendees — or even find some quiet time!</p>',
+		'filter' => false,
+	);
+	$home_involved = array(
+		'title' => 'Get involved',
+		'content' => '<p>There are several ways to get involved with WordCamp Boston. We’re <a href="/contact">accepting new organizers,</a> looking for <a href="#">volunteers to help out</a> during the conference, searching for <a href="#">sponsors to help</a> us help the conference reach as many people as possible, and <a href="#">applications are now open for speakers</a> who want to share their expertise.</p>',
+		'filter' => false,
+	);
+
 	$image = array (
 		'attachment_id' => 332,
 		'url' => 'http://boston.wordcamp.test/wp-content/uploads/sites/48/2019/03/cake.png',
@@ -123,7 +144,16 @@ EOF;
 		'image_title' => '',
 	);
 
-	$widget_text = array( 1 => $banner, 2 => $social_links,  3 => $news_header, '_multiwidget' => 1 );
+	$widget_text = array(
+		1 => $banner,
+		2 => $social_links,
+		3 => $news_header,
+		4 => $buttons,
+		5 => $home_learn,
+		6 => $home_friends,
+		7 => $home_involved,
+		'_multiwidget' => 1
+	);
 	$widget_sponsors = array( 1 => $sponsors, '_multiwidget' => 1 );
 	$widget_menus = array( 1 => $nav_menu_1, 2 => $nav_menu_2, '_multiwidget' => 1 );
 	$widget_subscription = array( 1 => $subscribe, '_multiwidget' => 1 );
@@ -135,7 +165,8 @@ EOF;
 	update_option( 'widget_mock_subscription_widget', $widget_subscription );
 	update_option( 'widget_media_image', $widget_media );
 
-	$sidebars['before-content-homepage-1'] = [ 'custom_html-1' ];
+	$sidebars['before-content-homepage-1'] = [ 'custom_html-1', 'custom_html-4' ];
+	$sidebars['before-content-homepage-2'] = [ 'custom_html-5', 'custom_html-5', 'custom_html-7' ];
 	$sidebars['before-content-1'] = [ 'custom_html-3' ];
 	$sidebars['sidebar-1'] = [ 'mock_subscription_widget-1', 'wcb_sponsors-1' ];
 	$sidebars['footer-1'] = [ 'media_image-1', 'nav_menu-1', 'nav_menu-2', 'custom_html-2' ];
