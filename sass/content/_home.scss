@@ -1,43 +1,42 @@
-#content-widgets {
-	background: $brown;
-}
-
-
-#content-widget-1 {
-	margin-top: 0;
-	margin-bottom: 120px;
-	color: $white;
-	@include light-on-dark;
-
-	background-image: url( "#{$svg-w}" );
-	background-size: 800px auto;
-	background-repeat: no-repeat;
-	background-position: 48vw center;
-
-	.widget {
-		@include container;
-		padding: 80px 80px 0;
-	}
-}
-
-#content-widget-2 {
-	@include container;
-	padding: 80px 80px 80px 500px;
-	background: $white;
-	position: relative;
-
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		width: 300px;
-		background-color: $brown;
-	}
-}
-
 body.home {
+	#content-widgets {
+		background: $brown;
+	}
+
+	#content-widget-1 {
+		margin-top: 0;
+		margin-bottom: 120px;
+		color: $white;
+		@include light-on-dark;
+
+		background-image: url( "#{$svg-w}" );
+		background-size: 800px auto;
+		background-repeat: no-repeat;
+		background-position: 48vw center;
+
+		.widget {
+			@include container;
+			padding: 80px 80px 0;
+		}
+	}
+
+	#content-widget-2 {
+		@include container;
+		padding: 80px 80px 80px 500px;
+		background: $white;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 300px;
+			background-color: $brown;
+		}
+	}
+
 	.content-area {
 		padding-top: 160px;
 		background: $brown;
@@ -58,5 +57,9 @@ body.home {
 			width: 300px;
 			background-color: $brown;
 		}
+	}
+
+	.hentry {
+		padding: 0;
 	}
 }
