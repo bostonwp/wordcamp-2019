@@ -10,7 +10,7 @@ body.home {
 	// Top Banner "Celebrating…"
 	#content-widget-1 {
 		margin-top: 0;
-		margin-bottom: 120px;
+		padding-bottom: 120px;
 		color: $white;
 		@include light-on-dark;
 
@@ -25,22 +25,7 @@ body.home {
 		}
 	}
 
-	#content-widget-2 {
-		@include container;
-		background: $card-bg;
-		position: relative;
-
-		&:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			background-color: $page-bg;
-		}
-	}
-
 	.content-area {
-		padding-top: 160px;
 		background: $page-bg;
 	}
 
@@ -62,16 +47,11 @@ body.home {
 		padding: 0;
 	}
 
-	$offset: 300px;
-	#content-widget-2 {
-		padding: 80px 80px 80px #{ $offset + 100px };
-
-		&:after {
-			left: 0;
-			width: $offset;
-		}
+	.entry-header {
+		display: none;
 	}
 
+	$offset: 300px;
 	.site-main {
 		padding: 80px #{ $offset + 100px } 80px 80px;
 
@@ -83,14 +63,6 @@ body.home {
 
 	@media screen and ( max-width: 782px ) {
 		$offset: 100px;
-		#content-widget-2 {
-			padding-left: #{ $offset + 100px };
-
-			&:after {
-				width: $offset;
-			}
-		}
-
 		.content-area {
 			padding-top: $offset;
 		}
@@ -106,15 +78,6 @@ body.home {
 
 	@media screen and ( max-width: 600px ) {
 		$offset: 40px;
-		#content-widget-2 {
-			padding-left: #{ $offset + 40px };
-			padding-right: 40px;
-
-			&:after {
-				width: $offset;
-			}
-		}
-
 		.content-area {
 			padding-top: $offset;
 		}
@@ -131,15 +94,6 @@ body.home {
 
 	@media screen and ( max-width: 480px ) {
 		$offset: 40px;
-		#content-widget-2 {
-			padding-left: #{ $offset + 40px };
-			padding-right: 40px;
-
-			&:after {
-				width: $offset;
-			}
-		}
-
 		.content-area {
 			padding-top: $offset;
 		}
