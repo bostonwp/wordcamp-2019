@@ -166,7 +166,7 @@ EOF;
 	update_option( 'widget_media_image', $widget_media );
 
 	$sidebars['before-content-homepage-1'] = [ 'custom_html-1', 'custom_html-4' ];
-	$sidebars['before-content-homepage-2'] = [ 'custom_html-5', 'custom_html-5', 'custom_html-7' ];
+	$sidebars['before-content-homepage-2'] = [ 'custom_html-5', 'custom_html-6', 'custom_html-7' ];
 	$sidebars['before-content-1'] = [ 'custom_html-3' ];
 	$sidebars['sidebar-1'] = [ 'mock_subscription_widget-1', 'wcb_sponsors-1' ];
 	$sidebars['footer-1'] = [ 'media_image-1', 'nav_menu-1', 'nav_menu-2', 'custom_html-2' ];

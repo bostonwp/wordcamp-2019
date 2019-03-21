@@ -23,6 +23,8 @@
 }
 
 .page-navigation-container {
+	margin-left: 40px;
+
 	.menu-primary-container > ul {
 		display: flex;
 		justify-content: flex-end;
@@ -92,7 +94,7 @@
 	width: 100%;
 }
 
-@media screen and ( max-width: 37.5em ) {
+@media screen and ( max-width: 782px ) {
 	.site-header {
 		display: block;
 
@@ -101,12 +103,18 @@
 		}
 	}
 
+	.js .menu-toggle {
+		display: block;
+	}
+
 	// Dropdowns are shown by default, so we don't need this.
 	.js .dropdown-toggle {
 		display: none;
 	}
 
 	.page-navigation-container {
+		margin-left: 0;
+
 		.menu-primary-container > ul {
 			display: none;
 			margin-top: 40px;

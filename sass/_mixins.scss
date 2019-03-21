@@ -2,6 +2,22 @@
 @mixin font-size($sizeValue: 1.6) {
 	font-size: ($sizeValue * 10) + px;
 	font-size: $sizeValue + rem;
+
+	@if ( $sizeValue > 5.6) {
+		@media ( max-width: 480px ) {
+			$value: $sizeValue * 0.7;
+			font-size: ($value * 10) + px;
+			font-size: $value + rem;
+		}
+	} @else {
+		@if ( $sizeValue > 2.8 ) {
+			@media ( max-width: 480px ) {
+				$value: $sizeValue * 0.9;
+				font-size: ($value * 10) + px;
+				font-size: $value + rem;
+			}
+		}
+	}
 }
 
 @mixin hover-state {
@@ -41,12 +57,20 @@
 @mixin container( $width: $size-main-width ) {
 	margin: 0 auto;
 	max-width: $width;
+	padding-left: 80px;
+	padding-right: 80px;
+
+	@media ( max-width: 600px ) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 
 @mixin banner-bg( $width: $size-main-width, $color: $brown ) {
 	position: relative;
 	@include container( $width );
-	padding: 80px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	margin-top: 0;
 	margin-bottom: 80px;
 

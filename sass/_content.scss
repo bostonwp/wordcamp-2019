@@ -1,8 +1,16 @@
 .site-main {
 	@include container( $size-post-width );
+	padding-left: 0;
+	padding-right: 0;
 
 	.hentry {
-		padding: 0 80px;
+		padding-left: 80px;
+		padding-right: 80px;
+
+		@media ( max-width: 600px ) {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
 	}
 
 	.hentry + .hentry {
@@ -14,6 +22,11 @@ body.page {
 	.site-main {
 		width: 100%;
 		padding: 0;
+	}
+
+	.hentry {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	.entry-title {
@@ -36,7 +49,10 @@ body.page {
 	.entry-content {
 		@include container( $size-post-width );
 		margin-bottom: 20px;
-		padding: 0 80px;
+
+		@media ( max-width: 600px ) {
+			padding: 0 40px;
+		}
 	}
 }
 
@@ -97,18 +113,8 @@ body.page {
 }
 
 .post-navigation {
-	border-top: 1px solid currentColor;
-	border-bottom: 1px solid currentColor;
-	padding: 10px 0;
+	padding: 20px 80px 80px;
 	@include font-size( $font-size-small );
-
-	a {
-		color: $color-text;
-
-		@include hover-state {
-			color: $color-text;
-		}
-	}
 
 	.nav-previous:before {
 		content: '\2190';

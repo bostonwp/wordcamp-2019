@@ -80,4 +80,77 @@ body.home {
 			width: $offset;
 		}
 	}
+
+	@media screen and ( max-width: 782px ) {
+		$offset: 100px;
+		#content-widget-2 {
+			padding-left: #{ $offset + 100px };
+
+			&:after {
+				width: $offset;
+			}
+		}
+
+		.content-area {
+			padding-top: $offset;
+		}
+
+		.site-main {
+			padding-right: #{ $offset + 100px };
+
+			&:after {
+				width: $offset;
+			}
+		}
+	}
+
+	@media screen and ( max-width: 600px ) {
+		$offset: 40px;
+		#content-widget-2 {
+			padding-left: #{ $offset + 40px };
+			padding-right: 40px;
+
+			&:after {
+				width: $offset;
+			}
+		}
+
+		.content-area {
+			padding-top: $offset;
+		}
+
+		.site-main {
+			padding-left: 40px;
+			padding-right: #{ $offset + 40px };
+
+			&:after {
+				width: $offset;
+			}
+		}
+	}
+
+	@media screen and ( max-width: 480px ) {
+		$offset: 40px;
+		#content-widget-2 {
+			padding-left: #{ $offset + 40px };
+			padding-right: 40px;
+
+			&:after {
+				width: $offset;
+			}
+		}
+
+		.content-area {
+			padding-top: $offset;
+		}
+
+		.site-main {
+			padding-left: 40px;
+			padding-right: #{ $offset + 40px };
+
+			&:after {
+				width: $offset;
+			}
+		}
+	}
 }

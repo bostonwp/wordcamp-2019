@@ -180,6 +180,11 @@ a.cta-button {
 .googlemaps {
 	max-width: $size-post-width;
 	margin: 40px -80px;
+
+	@media ( max-width: 600px ) {
+		margin-left: -40px;
+		margin-right: -40px;
+	}
 }
 
 .wp-caption,
