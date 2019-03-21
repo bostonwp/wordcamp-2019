@@ -60,6 +60,12 @@
 		bottom: 0;
 		background: $color;
 	}
+
+	@media ( max-width: $width ) {
+		&:before {
+			left: 0;
+		}
+	}
 }
 
 @mixin sr-clip() {
