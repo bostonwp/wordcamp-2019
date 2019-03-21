@@ -1,8 +1,13 @@
 body.home {
+	// Local variables
+	$page-bg: $brown;
+	$card-bg: $white;
+
 	#content-widgets {
-		background: $brown;
+		background: $page-bg;
 	}
 
+	// Top Banner "Celebrating…"
 	#content-widget-1 {
 		margin-top: 0;
 		margin-bottom: 120px;
@@ -22,8 +27,7 @@ body.home {
 
 	#content-widget-2 {
 		@include container;
-		padding: 80px 80px 80px 500px;
-		background: $white;
+		background: $card-bg;
 		position: relative;
 
 		&:after {
@@ -31,21 +35,18 @@ body.home {
 			position: absolute;
 			top: 0;
 			bottom: 0;
-			left: 0;
-			width: 300px;
-			background-color: $brown;
+			background-color: $page-bg;
 		}
 	}
 
 	.content-area {
 		padding-top: 160px;
-		background: $brown;
+		background: $page-bg;
 	}
 
 	.site-main {
 		@include container;
-		padding: 80px 500px 80px 80px;
-		background: $white;
+		background: $card-bg;
 		position: relative;
 
 		&:after {
@@ -53,13 +54,30 @@ body.home {
 			position: absolute;
 			top: 0;
 			bottom: 0;
-			right: 0;
-			width: 300px;
-			background-color: $brown;
+			background-color: $page-bg;
 		}
 	}
 
 	.hentry {
 		padding: 0;
+	}
+
+	$offset: 300px;
+	#content-widget-2 {
+		padding: 80px 80px 80px #{ $offset + 100px };
+
+		&:after {
+			left: 0;
+			width: $offset;
+		}
+	}
+
+	.site-main {
+		padding: 80px #{ $offset + 100px } 80px 80px;
+
+		&:after {
+			right: 0;
+			width: $offset;
+		}
 	}
 }
