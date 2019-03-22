@@ -319,7 +319,7 @@ hr,
   hr.is-style-dots,
   .wp-block-separator.is-style-dots {
     height: 50px;
-    background: transparent url("http://svg.redradar.net/boston-2019/border.svg") no-repeat center; }
+    background: transparent url("https://svg.redradar.net/boston-2019/border.svg") no-repeat center; }
     hr.is-style-dots:before,
     .wp-block-separator.is-style-dots:before {
       content: ''; }
@@ -674,7 +674,7 @@ body.home #content-widget-2 .widget-title {
         left: 0; } }
     #primary-sidebar .mock_subscription_widget:before,
     #primary-sidebar .widget_blog_subscription:before {
-      background: #BCD0C7 url("http://svg.redradar.net/boston-2019/subscribe.png"); }
+      background: #BCD0C7 url("https://svg.redradar.net/boston-2019/subscribe.png"); }
     #primary-sidebar .mock_subscription_widget form,
     #primary-sidebar .widget_blog_subscription form {
       display: grid;
@@ -766,7 +766,7 @@ body.home #content-widget-2 .widget-title {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-right: 80px;
-  background: #452F35 url("http://svg.redradar.net/boston-2019/footer.png");
+  background: #452F35 url("https://svg.redradar.net/boston-2019/footer.png");
   font-size: 18px;
   font-size: 1.8rem; }
   #footer-widget-1 ul {
@@ -826,15 +826,15 @@ body.home #content-widget-2 .widget-title {
     #footer-widget-1 .widget:nth-of-type(4) li:last-of-type a {
       margin-right: 0; }
     #footer-widget-1 .widget:nth-of-type(4) .wc-icon-twitter {
-      background-image: url("http://svg.redradar.net/boston-2019/twitter.svg"); }
+      background-image: url("https://svg.redradar.net/boston-2019/twitter.svg"); }
     #footer-widget-1 .widget:nth-of-type(4) .wc-icon-facebook {
-      background-image: url("http://svg.redradar.net/boston-2019/facebook.svg"); }
+      background-image: url("https://svg.redradar.net/boston-2019/facebook.svg"); }
     #footer-widget-1 .widget:nth-of-type(4) .wc-icon-youtube {
-      background-image: url("http://svg.redradar.net/boston-2019/youtube.svg"); }
+      background-image: url("https://svg.redradar.net/boston-2019/youtube.svg"); }
     #footer-widget-1 .widget:nth-of-type(4) .wc-icon-meetup {
-      background-image: url("http://svg.redradar.net/boston-2019/meetup.svg"); }
+      background-image: url("https://svg.redradar.net/boston-2019/meetup.svg"); }
     #footer-widget-1 .widget:nth-of-type(4) .wc-icon-wp {
-      background-image: url("http://svg.redradar.net/boston-2019/wordpress.svg"); }
+      background-image: url("https://svg.redradar.net/boston-2019/wordpress.svg"); }
   #footer-widget-1 .widget_media_image {
     padding: 60px; }
   @media (max-width: 960px) {
@@ -960,7 +960,7 @@ body.page .entry-title {
       font-size: 70px;
       font-size: 7rem; } }
   body.page .entry-title:before {
-    background-image: url("http://svg.redradar.net/boston-2019/w.svg");
+    background-image: url("https://svg.redradar.net/boston-2019/w.svg");
     background-size: 1000px auto;
     background-repeat: no-repeat;
     background-position: 60vw -160px; }
@@ -1022,7 +1022,7 @@ body.page .entry-content {
       font-size: 70px;
       font-size: 7rem; } }
   .page-title:before {
-    background-image: url("http://svg.redradar.net/boston-2019/w.svg");
+    background-image: url("https://svg.redradar.net/boston-2019/w.svg");
     background-size: 1000px auto;
     background-repeat: no-repeat;
     background-position: 52vw -160px; }
@@ -1088,7 +1088,7 @@ body.home #content-widget-1 {
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("http://svg.redradar.net/boston-2019/w.svg");
+  background-image: url("https://svg.redradar.net/boston-2019/w.svg");
   background-size: 800px auto;
   background-repeat: no-repeat;
   background-position: 48vw center; }
