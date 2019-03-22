@@ -7,7 +7,8 @@
 		text-align: center;
 	}
 
-	.mock_subscription_widget {
+	.mock_subscription_widget,
+	.widget_blog_subscription {
 		@include banner-bg( $size-post-width + 160px );
 
 		&:before {

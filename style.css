@@ -641,7 +641,8 @@ body.home #content-widget-2 .widget-title {
       #primary-sidebar .widget-title {
         font-size: 45px;
         font-size: 4.5rem; } }
-  #primary-sidebar .mock_subscription_widget {
+  #primary-sidebar .mock_subscription_widget,
+  #primary-sidebar .widget_blog_subscription {
     position: relative;
     margin: 0 auto;
     max-width: 990px;
@@ -653,10 +654,12 @@ body.home #content-widget-2 .widget-title {
     margin-bottom: 80px;
     z-index: 1; }
     @media (max-width: 600px) {
-      #primary-sidebar .mock_subscription_widget {
+      #primary-sidebar .mock_subscription_widget,
+      #primary-sidebar .widget_blog_subscription {
         padding-left: 40px;
         padding-right: 40px; } }
-    #primary-sidebar .mock_subscription_widget:before {
+    #primary-sidebar .mock_subscription_widget:before,
+    #primary-sidebar .widget_blog_subscription:before {
       content: '';
       position: absolute;
       z-index: -1;
@@ -666,27 +669,36 @@ body.home #content-widget-2 .widget-title {
       bottom: 0;
       background: #452F35; }
     @media (max-width: 990px) {
-      #primary-sidebar .mock_subscription_widget:before {
+      #primary-sidebar .mock_subscription_widget:before,
+      #primary-sidebar .widget_blog_subscription:before {
         left: 0; } }
-    #primary-sidebar .mock_subscription_widget:before {
+    #primary-sidebar .mock_subscription_widget:before,
+    #primary-sidebar .widget_blog_subscription:before {
       background: #BCD0C7 url("http://svg.redradar.net/boston-2019/subscribe.png"); }
-    #primary-sidebar .mock_subscription_widget form {
+    #primary-sidebar .mock_subscription_widget form,
+    #primary-sidebar .widget_blog_subscription form {
       display: grid;
       grid-template-columns: 1fr 200px; }
       @media screen and (max-width: 450px) {
-        #primary-sidebar .mock_subscription_widget form {
+        #primary-sidebar .mock_subscription_widget form,
+        #primary-sidebar .widget_blog_subscription form {
           grid-template-columns: 1fr; } }
-    #primary-sidebar .mock_subscription_widget #subscribe-email {
+    #primary-sidebar .mock_subscription_widget #subscribe-email,
+    #primary-sidebar .widget_blog_subscription #subscribe-email {
       margin-right: 40px; }
-    #primary-sidebar .mock_subscription_widget #subscribe-email input {
+    #primary-sidebar .mock_subscription_widget #subscribe-email input,
+    #primary-sidebar .widget_blog_subscription #subscribe-email input {
       width: 100%;
       padding: 15px 20px 16px; }
-    #primary-sidebar .mock_subscription_widget #subscribe-text {
+    #primary-sidebar .mock_subscription_widget #subscribe-text,
+    #primary-sidebar .widget_blog_subscription #subscribe-text {
       grid-column: 1 / span 2; }
       @media screen and (max-width: 450px) {
-        #primary-sidebar .mock_subscription_widget #subscribe-text {
+        #primary-sidebar .mock_subscription_widget #subscribe-text,
+        #primary-sidebar .widget_blog_subscription #subscribe-text {
           grid-column: 1; } }
-    #primary-sidebar .mock_subscription_widget input[type="submit"] {
+    #primary-sidebar .mock_subscription_widget input[type="submit"],
+    #primary-sidebar .widget_blog_subscription input[type="submit"] {
       width: 100%;
       height: 100%;
       text-align: center;
@@ -697,17 +709,25 @@ body.home #content-widget-2 .widget-title {
       border-radius: 5px;
       background: #DE541E;
       border-color: #DE541E; }
-      #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+      #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus,
+      #primary-sidebar .widget_blog_subscription input[type="submit"]:hover,
+      #primary-sidebar .widget_blog_subscription input[type="submit"]:active,
+      #primary-sidebar .widget_blog_subscription input[type="submit"]:focus {
         background: #005F8C;
         border-color: #005F8C; }
-      #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+      #primary-sidebar .mock_subscription_widget input[type="submit"]:focus,
+      #primary-sidebar .widget_blog_subscription input[type="submit"]:focus {
         outline: none;
         -webkit-box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF;
                 box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF; }
-      #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+      #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus,
+      #primary-sidebar .widget_blog_subscription input[type="submit"]:hover,
+      #primary-sidebar .widget_blog_subscription input[type="submit"]:active,
+      #primary-sidebar .widget_blog_subscription input[type="submit"]:focus {
         background: #9E2D00;
         border-color: #9E2D00; }
-      #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+      #primary-sidebar .mock_subscription_widget input[type="submit"]:focus,
+      #primary-sidebar .widget_blog_subscription input[type="submit"]:focus {
         -webkit-box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66;
                 box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66; }
   #primary-sidebar .wcb_widget_sponsors {
