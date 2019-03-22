@@ -400,6 +400,9 @@ hr,
       font-size: 70px;
       font-size: 7rem; } }
 
+.has-large-font-size {
+  line-height: 1.4; }
+
 .site-header {
   position: relative;
   z-index: 100;
