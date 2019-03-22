@@ -9,7 +9,7 @@
 		@include banner-bg( $size-post-width + 160px );
 
 		&:before {
-			background: $grey-400;
+			background: $grey-200 url( "#{$pattern-subscribe}" );
 		}
 
 		form {

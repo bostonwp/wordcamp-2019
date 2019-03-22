@@ -2,9 +2,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	padding-right: 80px;
-	// @todo Needs background image
-	// background: $brown;
-	background: #67585C;
+	background: $brown url( "#{$pattern-footer}" );
 	@include font-size( 1.8 );
 
 	ul {
