@@ -17,6 +17,9 @@ body {
   font-size: 2rem;
   line-height: 1.55; }
 
+.site-content {
+  background: #F5F9F7; }
+
 button,
 input,
 select,
@@ -624,117 +627,117 @@ body.home #content-widget-2 .widget-title {
       font-size: 45px;
       font-size: 4.5rem; } }
 
-#primary-sidebar .widget-title {
-  margin-bottom: 60px;
-  font-size: 50px;
-  font-size: 5rem;
-  text-align: center; }
-  @media (max-width: 480px) {
-    #primary-sidebar .widget-title {
-      font-size: 45px;
-      font-size: 4.5rem; } }
-
-#primary-sidebar .mock_subscription_widget {
-  position: relative;
-  margin: 0 auto;
-  max-width: 990px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  margin-top: 0;
-  margin-bottom: 80px; }
-  @media (max-width: 600px) {
-    #primary-sidebar .mock_subscription_widget {
-      padding-left: 40px;
-      padding-right: 40px; } }
-  #primary-sidebar .mock_subscription_widget:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: calc( ( 50vw - 495px ) * -1);
-    width: 100vw;
-    bottom: 0;
-    background: #452F35; }
-  @media (max-width: 990px) {
+#primary-sidebar {
+  background: #ffffff; }
+  #primary-sidebar .widget-title {
+    margin-bottom: 60px;
+    font-size: 50px;
+    font-size: 5rem;
+    text-align: center; }
+    @media (max-width: 480px) {
+      #primary-sidebar .widget-title {
+        font-size: 45px;
+        font-size: 4.5rem; } }
+  #primary-sidebar .mock_subscription_widget {
+    position: relative;
+    margin: 0 auto;
+    max-width: 990px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    z-index: 1; }
+    @media (max-width: 600px) {
+      #primary-sidebar .mock_subscription_widget {
+        padding-left: 40px;
+        padding-right: 40px; } }
     #primary-sidebar .mock_subscription_widget:before {
-      left: 0; } }
-  #primary-sidebar .mock_subscription_widget:before {
-    background: #BCD0C7 url("http://boston.wordcamp.test/wp-content/themes/boston-2019/assets/subscribe.png"); }
-  #primary-sidebar .mock_subscription_widget form {
-    display: grid;
-    grid-template-columns: 1fr 200px; }
-    @media screen and (max-width: 450px) {
-      #primary-sidebar .mock_subscription_widget form {
-        grid-template-columns: 1fr; } }
-  #primary-sidebar .mock_subscription_widget #subscribe-email {
-    margin-right: 40px; }
-  #primary-sidebar .mock_subscription_widget #subscribe-email input {
-    width: 100%;
-    padding: 15px 20px 16px; }
-  #primary-sidebar .mock_subscription_widget #subscribe-text {
-    grid-column: 1 / span 2; }
-    @media screen and (max-width: 450px) {
-      #primary-sidebar .mock_subscription_widget #subscribe-text {
-        grid-column: 1; } }
-  #primary-sidebar .mock_subscription_widget input[type="submit"] {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    background: #0073AA;
-    border: 4px solid #0073AA;
-    border-radius: 5px;
-    background: #DE541E;
-    border-color: #DE541E; }
-    #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
-      background: #005F8C;
-      border-color: #005F8C; }
-    #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
-      outline: none;
-      -webkit-box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF;
-              box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF; }
-    #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
-      background: #9E2D00;
-      border-color: #9E2D00; }
-    #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
-      -webkit-box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66;
-              box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66; }
-
-#primary-sidebar .wcb_widget_sponsors {
-  margin: 0 auto;
-  max-width: 1160px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding: 0 40px;
-  margin-bottom: 80px; }
-  @media (max-width: 600px) {
-    #primary-sidebar .wcb_widget_sponsors {
-      padding-left: 40px;
-      padding-right: 40px; } }
-  #primary-sidebar .wcb_widget_sponsors .sponsor-level.bronze, #primary-sidebar .wcb_widget_sponsors .sponsor-level.silver, #primary-sidebar .wcb_widget_sponsors .sponsor-level.small-business, #primary-sidebar .wcb_widget_sponsors .sponsor-level.consultant,
-  #primary-sidebar .wcb_widget_sponsors .sponsor-level .sponsor-level-title {
-    display: none; }
-  #primary-sidebar .wcb_widget_sponsors .widget-title {
-    color: #0073AA; }
-  #primary-sidebar .wcb_widget_sponsors .sponsor-level {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    @media screen and (max-width: 800px) {
-      #primary-sidebar .wcb_widget_sponsors .sponsor-level {
-        grid-template-columns: repeat(2, 1fr); } }
-    @media screen and (max-width: 450px) {
-      #primary-sidebar .wcb_widget_sponsors .sponsor-level {
-        grid-template-columns: 1fr; } }
-  #primary-sidebar .wcb_widget_sponsors .sponsor-logo {
-    padding: 0;
-    border-bottom: none; }
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: calc( ( 50vw - 495px ) * -1);
+      width: 100vw;
+      bottom: 0;
+      background: #452F35; }
+    @media (max-width: 990px) {
+      #primary-sidebar .mock_subscription_widget:before {
+        left: 0; } }
+    #primary-sidebar .mock_subscription_widget:before {
+      background: #BCD0C7 url("http://boston.wordcamp.test/wp-content/themes/boston-2019/assets/subscribe.png"); }
+    #primary-sidebar .mock_subscription_widget form {
+      display: grid;
+      grid-template-columns: 1fr 200px; }
+      @media screen and (max-width: 450px) {
+        #primary-sidebar .mock_subscription_widget form {
+          grid-template-columns: 1fr; } }
+    #primary-sidebar .mock_subscription_widget #subscribe-email {
+      margin-right: 40px; }
+    #primary-sidebar .mock_subscription_widget #subscribe-email input {
+      width: 100%;
+      padding: 15px 20px 16px; }
+    #primary-sidebar .mock_subscription_widget #subscribe-text {
+      grid-column: 1 / span 2; }
+      @media screen and (max-width: 450px) {
+        #primary-sidebar .mock_subscription_widget #subscribe-text {
+          grid-column: 1; } }
+    #primary-sidebar .mock_subscription_widget input[type="submit"] {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      background: #0073AA;
+      border: 4px solid #0073AA;
+      border-radius: 5px;
+      background: #DE541E;
+      border-color: #DE541E; }
+      #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+        background: #005F8C;
+        border-color: #005F8C; }
+      #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+        outline: none;
+        -webkit-box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF;
+                box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF; }
+      #primary-sidebar .mock_subscription_widget input[type="submit"]:hover, #primary-sidebar .mock_subscription_widget input[type="submit"]:active, #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+        background: #9E2D00;
+        border-color: #9E2D00; }
+      #primary-sidebar .mock_subscription_widget input[type="submit"]:focus {
+        -webkit-box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66;
+                box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66; }
+  #primary-sidebar .wcb_widget_sponsors {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding: 0 40px 80px; }
+    @media (max-width: 600px) {
+      #primary-sidebar .wcb_widget_sponsors {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    #primary-sidebar .wcb_widget_sponsors .sponsor-level.bronze, #primary-sidebar .wcb_widget_sponsors .sponsor-level.silver, #primary-sidebar .wcb_widget_sponsors .sponsor-level.small-business, #primary-sidebar .wcb_widget_sponsors .sponsor-level.consultant,
+    #primary-sidebar .wcb_widget_sponsors .sponsor-level .sponsor-level-title {
+      display: none; }
+    #primary-sidebar .wcb_widget_sponsors .widget-title {
+      color: #0073AA; }
+    #primary-sidebar .wcb_widget_sponsors .sponsor-level {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media screen and (max-width: 800px) {
+        #primary-sidebar .wcb_widget_sponsors .sponsor-level {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media screen and (max-width: 450px) {
+        #primary-sidebar .wcb_widget_sponsors .sponsor-level {
+          grid-template-columns: 1fr; } }
+    #primary-sidebar .wcb_widget_sponsors .sponsor-logo {
+      padding: 0;
+      border-bottom: none; }
 
 #footer-widget-1 {
   display: grid;
@@ -906,6 +909,7 @@ body.page .entry-title {
   padding-bottom: 80px;
   margin-top: 0;
   margin-bottom: 80px;
+  z-index: 1;
   font-size: 100px;
   font-size: 10rem;
   font-family: "Unica One", sans-serif;
@@ -968,6 +972,7 @@ body.page .entry-content {
   padding-bottom: 80px;
   margin-top: 0;
   margin-bottom: 80px;
+  z-index: 1;
   font-size: 100px;
   font-size: 10rem;
   line-height: 0.9;

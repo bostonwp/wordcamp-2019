@@ -1,4 +1,6 @@
 #primary-sidebar {
+	background: $white;
+
 	.widget-title {
 		margin-bottom: 60px;
 		@include font-size( $font-size-level-2 );
@@ -47,8 +49,7 @@
 
 	.wcb_widget_sponsors {
 		@include container( $size-main-width );
-		padding: 0 40px;
-		margin-bottom: 80px;
+		padding: 0 40px 80px;
 
 		// Hide all but highest level
 		.sponsor-level {
