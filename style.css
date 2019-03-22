@@ -1076,14 +1076,15 @@ body.home #content-widget-1 {
         padding-right: 40px; } }
 
 body.home .content-area {
-  background: #452F35; }
+  background: #452F35;
+  padding-bottom: 160px; }
 
 body.home .site-main {
   margin: 0 auto;
   max-width: 1160px;
   padding-left: 80px;
   padding-right: 80px;
-  background: #ffffff;
+  background: #F5F9F7;
   position: relative; }
   @media (max-width: 600px) {
     body.home .site-main {
@@ -1101,6 +1102,31 @@ body.home .hentry {
 
 body.home .entry-header {
   display: none; }
+
+body.home .wp-block-latest-posts {
+  list-style: none;
+  padding-left: 0; }
+  body.home .wp-block-latest-posts li {
+    margin-bottom: 40px; }
+  body.home .wp-block-latest-posts a {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-family: "acumin-pro-condensed", sans-serif;
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 1.2;
+    font-weight: 700;
+    border-bottom: none;
+    color: #898980; }
+    @media (max-width: 480px) {
+      body.home .wp-block-latest-posts a {
+        font-size: 32.4px;
+        font-size: 3.24rem; } }
+  body.home .wp-block-latest-posts time {
+    font-family: AcuminPro-Regular;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #898980; }
 
 body.home .site-main {
   padding: 80px 400px 80px 80px; }
