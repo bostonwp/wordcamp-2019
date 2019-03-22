@@ -73,6 +73,14 @@ body.page {
 		background-repeat: no-repeat;
 		background-position: 52vw -160px;
 	}
+
+	&.screen-reader-text {
+		clip: auto;
+		position: relative !important;
+		height: auto;
+		width: auto;
+		overflow: visible;
+	}
 }
 
 .entry-title {

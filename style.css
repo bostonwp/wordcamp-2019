@@ -998,6 +998,12 @@ body.page .entry-content {
     background-size: 1000px auto;
     background-repeat: no-repeat;
     background-position: 52vw -160px; }
+  .page-title.screen-reader-text {
+    clip: auto;
+    position: relative !important;
+    height: auto;
+    width: auto;
+    overflow: visible; }
 
 .entry-title {
   margin-bottom: 20px;
