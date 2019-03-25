@@ -25,23 +25,28 @@ body.home {
 		}
 	}
 
-	.content-area {
+	.site-content {
 		background: $page-bg;
+	}
+
+	.content-area {
+		@include container;
 		padding-bottom: 160px;
+		padding-right: 300px;
+		position: relative;
+
+		@media ( max-width: 782px ) {
+			padding-right: 80px;
+		}
+
+		@media ( max-width: 600px ) {
+			padding-right: 40px;
+		}
 	}
 
 	.site-main {
-		@include container;
+		margin: 0;
 		background: $card-bg;
-		position: relative;
-
-		&:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			background-color: $page-bg;
-		}
 	}
 
 	.hentry {
@@ -50,6 +55,53 @@ body.home {
 
 	.entry-header {
 		display: none;
+	}
+
+	.entry-content {
+		position: relative;
+		padding-right: 140px;
+
+		@media ( max-width: 782px ) {
+			padding-right: 80px;
+		}
+
+		@media ( max-width: 600px ) {
+			padding-right: 40px;
+		}
+	}
+
+	.wp-block-spacer.full-width-spacer {
+		margin: 0 -141px 0 -81px;
+		background: $page-bg;
+
+		@media ( max-width: 782px ) {
+			margin-right: -81px;
+		}
+
+		@media ( max-width: 600px ) {
+			margin-right: -41px;
+		}
+	}
+
+	.home-image-1,
+	.home-image-2 {
+		border: 3px solid $white;
+		box-shadow: 0 0 20px rgba( $page-bg, 0.1 );
+	}
+
+	@media ( min-width: 1140px ) {
+		.home-image-1,
+		.home-image-2 {
+			position: absolute;
+			top: 150px;
+			right: -360px;
+			transform: scale( 0.75 ) rotate( 15deg );
+		}
+
+		.home-image-2 {
+			top: 400px;
+			transform: scale( 0.75 ) rotate( -15deg );
+		}
 	}
 
 	.wp-block-latest-posts {
@@ -75,65 +127,6 @@ body.home {
 			font-family: AcuminPro-Regular;
 			@include font-size( 1.6 );
 			color: $color-meta;
-		}
-	}
-
-	// Content offset & positioning
-
-	$offset: 300px;
-	.site-main {
-		padding: 80px #{ $offset + 100px } 80px 80px;
-
-		&:after {
-			right: 0;
-			width: $offset;
-		}
-	}
-
-	@media screen and ( max-width: 782px ) {
-		$offset: 100px;
-		.content-area {
-			padding-top: $offset;
-		}
-
-		.site-main {
-			padding-right: #{ $offset + 100px };
-
-			&:after {
-				width: $offset;
-			}
-		}
-	}
-
-	@media screen and ( max-width: 600px ) {
-		$offset: 40px;
-		.content-area {
-			padding-top: $offset;
-		}
-
-		.site-main {
-			padding-left: 40px;
-			padding-right: #{ $offset + 40px };
-
-			&:after {
-				width: $offset;
-			}
-		}
-	}
-
-	@media screen and ( max-width: 480px ) {
-		$offset: 40px;
-		.content-area {
-			padding-top: $offset;
-		}
-
-		.site-main {
-			padding-left: 40px;
-			padding-right: #{ $offset + 40px };
-
-			&:after {
-				width: $offset;
-			}
 		}
 	}
 }
