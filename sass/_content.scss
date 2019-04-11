@@ -1,7 +1,7 @@
 .site-main {
 	@include container( $size-post-width );
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 	padding-bottom: 80px;
 
 	.hentry {
