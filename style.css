@@ -200,7 +200,8 @@ input[type='button'],
 input[type='submit'],
 input[type='reset'],
 button,
-a.cta-button {
+a.cta-button,
+a.comment-reply-link {
   display: inline-block;
   margin: 0;
   padding: 16px 40px;
@@ -235,14 +236,18 @@ a.cta-button {
   button:focus,
   a.cta-button:hover,
   a.cta-button:active,
-  a.cta-button:focus {
+  a.cta-button:focus,
+  a.comment-reply-link:hover,
+  a.comment-reply-link:active,
+  a.comment-reply-link:focus {
     background: #005F8C;
     border-color: #005F8C; }
   input[type='button']:focus,
   input[type='submit']:focus,
   input[type='reset']:focus,
   button:focus,
-  a.cta-button:focus {
+  a.cta-button:focus,
+  a.comment-reply-link:focus {
     outline: none;
     -webkit-box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF;
             box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF; }
@@ -1662,6 +1667,14 @@ body.page-template-page-day-of .entry-content h3 {
     body.page-template-page-day-of .entry-content h3 {
       font-size: 45px;
       font-size: 4.5rem; } }
+
+#comments {
+  padding-left: 80px;
+  padding-right: 80px; }
+  @media (max-width: 600px) {
+    #comments {
+      padding-left: 40px;
+      padding-right: 40px; } }
 
 .comments-title,
 .comment-reply-title {

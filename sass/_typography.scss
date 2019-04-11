@@ -158,7 +158,8 @@ input[type='button'],
 input[type='submit'],
 input[type='reset'],
 button,
-a.cta-button {
+a.cta-button,
+a.comment-reply-link {
 	display: inline-block;
 	margin: 0;
 	padding: 16px 40px;
