@@ -30,9 +30,9 @@ body.home #content-widget-1 {
 		letter-spacing: 3px;
 	}
 
-	.button {
-		display: inline-block;
-		padding: 30px;
+	.button-row a:nth-of-type(2) {
+		@include button-secondary;
+		margin-left: 20px;
 	}
 
 	@media screen and ( max-width: $bkpt-phone ) {
@@ -45,8 +45,15 @@ body.home #content-widget-1 {
 		}
 	}
 
-	.button-row a:nth-of-type(2) {
-		@include button-secondary;
-		margin-left: 20px;
+	@media screen and ( max-width: 600px ) {
+		.button-row .cta-button {
+			display: block;
+			max-width: 300px;
+			margin-left: 0 !important;
+
+			&:nth-of-type(2) {
+				margin-top: 20px;
+			}
+		}
 	}
 }

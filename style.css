@@ -574,28 +574,6 @@ body.home #content-widget-1 .level-4 {
   text-transform: uppercase;
   letter-spacing: 3px; }
 
-body.home #content-widget-1 .button {
-  display: inline-block;
-  padding: 30px; }
-
-@media screen and (max-width: 450px) {
-  body.home #content-widget-1 .level-1 {
-    font-size: 50px;
-    font-size: 5rem; } }
-  @media screen and (max-width: 450px) and (max-width: 480px) {
-    body.home #content-widget-1 .level-1 {
-      font-size: 45px;
-      font-size: 4.5rem; } }
-
-@media screen and (max-width: 450px) {
-  body.home #content-widget-1 .level-2 {
-    font-size: 36px;
-    font-size: 3.6rem; } }
-  @media screen and (max-width: 450px) and (max-width: 480px) {
-    body.home #content-widget-1 .level-2 {
-      font-size: 32.4px;
-      font-size: 3.24rem; } }
-
 body.home #content-widget-1 .button-row a:nth-of-type(2) {
   text-align: center;
   text-decoration: none;
@@ -619,6 +597,32 @@ body.home #content-widget-1 .button-row a:nth-of-type(2) {
   body.home #content-widget-1 .button-row a:nth-of-type(2):focus {
     -webkit-box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66;
             box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66; }
+
+@media screen and (max-width: 450px) {
+  body.home #content-widget-1 .level-1 {
+    font-size: 50px;
+    font-size: 5rem; } }
+  @media screen and (max-width: 450px) and (max-width: 480px) {
+    body.home #content-widget-1 .level-1 {
+      font-size: 45px;
+      font-size: 4.5rem; } }
+
+@media screen and (max-width: 450px) {
+  body.home #content-widget-1 .level-2 {
+    font-size: 36px;
+    font-size: 3.6rem; } }
+  @media screen and (max-width: 450px) and (max-width: 480px) {
+    body.home #content-widget-1 .level-2 {
+      font-size: 32.4px;
+      font-size: 3.24rem; } }
+
+@media screen and (max-width: 600px) {
+  body.home #content-widget-1 .button-row .cta-button {
+    display: block;
+    max-width: 300px;
+    margin-left: 0 !important; }
+    body.home #content-widget-1 .button-row .cta-button:nth-of-type(2) {
+      margin-top: 20px; } }
 
 body.home #content-widget-2 .widget-title {
   color: #0073AA;
