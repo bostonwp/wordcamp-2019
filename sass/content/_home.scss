@@ -124,7 +124,7 @@ body.home {
 		}
 
 		time {
-			font-family: AcuminPro-Regular;
+			font-family: $font-body;
 			@include font-size( 1.6 );
 			color: $color-meta;
 		}

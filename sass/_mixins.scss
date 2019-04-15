@@ -110,6 +110,7 @@
 	border-radius: 5px;
 
 	@include hover-state {
+		color: $white;
 		background: $blue-700;
 		border-color: $blue-700;
 	}

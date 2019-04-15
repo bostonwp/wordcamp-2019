@@ -240,6 +240,7 @@ a.comment-reply-link {
   a.comment-reply-link:hover,
   a.comment-reply-link:active,
   a.comment-reply-link:focus {
+    color: #ffffff;
     background: #005F8C;
     border-color: #005F8C; }
   input[type='button']:focus,
@@ -271,6 +272,7 @@ a.comment-reply-link {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   .entry-content .wp-block-button__link:hover, .entry-content .wp-block-button__link:active, .entry-content .wp-block-button__link:focus {
+    color: #ffffff;
     background: #005F8C;
     border-color: #005F8C; }
   .entry-content .wp-block-button__link:focus {
@@ -475,7 +477,7 @@ hr,
             box-shadow: none; }
     .page-navigation-container ul ul a {
       padding: 8px 30px;
-      width: 17em; }
+      width: 320px; }
     .page-navigation-container ul ul li:hover a,
     .page-navigation-container ul ul li.focus a {
       margin-left: -15px; }
@@ -590,6 +592,7 @@ body.home #content-widget-1 .button-row a:nth-of-type(2) {
   border-color: #DE541E;
   margin-left: 20px; }
   body.home #content-widget-1 .button-row a:nth-of-type(2):hover, body.home #content-widget-1 .button-row a:nth-of-type(2):active, body.home #content-widget-1 .button-row a:nth-of-type(2):focus {
+    color: #ffffff;
     background: #005F8C;
     border-color: #005F8C; }
   body.home #content-widget-1 .button-row a:nth-of-type(2):focus {
@@ -722,6 +725,7 @@ body.home #content-widget-2 .widget-title {
       #primary-sidebar .widget_blog_subscription input[type="submit"]:hover,
       #primary-sidebar .widget_blog_subscription input[type="submit"]:active,
       #primary-sidebar .widget_blog_subscription input[type="submit"]:focus {
+        color: #ffffff;
         background: #005F8C;
         border-color: #005F8C; }
       #primary-sidebar .mock_subscription_widget input[type="submit"]:focus,
@@ -1204,7 +1208,7 @@ body.home .wp-block-latest-posts {
         font-size: 32.4px;
         font-size: 3.24rem; } }
   body.home .wp-block-latest-posts time {
-    font-family: AcuminPro-Regular;
+    font-family: "acumin-pro", sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
     color: #898980; }
