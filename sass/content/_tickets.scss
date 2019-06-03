@@ -123,18 +123,18 @@
 	&:before {
 		content: 'Coupon Code:';
 		display: inline-block;
-		width: 100px;
+		width: 150px;
 		text-align: left;
 		@include font-size( 1.6 );
 	}
 
 	#tix-coupon-input {
-		padding: 9px 20px 12px;
 		width: calc( 100% - 250px);
 		border-radius: 0;
 	}
 
 	input[name="tix_coupon_submit"] {
+		margin-left: 10px;
 		float: right;
 	}
 

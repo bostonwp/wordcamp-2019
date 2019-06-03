@@ -1381,15 +1381,15 @@ body.error404 .search-form {
   #tix-coupon-container:not([style="display: none;"]):before {
     content: 'Coupon Code:';
     display: inline-block;
-    width: 100px;
+    width: 150px;
     text-align: left;
     font-size: 16px;
     font-size: 1.6rem; }
   #tix-coupon-container:not([style="display: none;"]) #tix-coupon-input {
-    padding: 9px 20px 12px;
     width: calc( 100% - 250px);
     border-radius: 0; }
   #tix-coupon-container:not([style="display: none;"]) input[name="tix_coupon_submit"] {
+    margin-left: 10px;
     float: right; }
   @media (max-width: 400px) {
     #tix-coupon-container:not([style="display: none;"]) input {
