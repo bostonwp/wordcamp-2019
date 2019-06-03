@@ -1,5 +1,14 @@
 .tix_tickets_table,
 .tix-ticket-form {
+	thead {
+		background: $brown;
+		color: $white;
+	}
+
+	th, td {
+		padding: 3px 10px 5px;
+	}
+
 	.tix-column-description {
 		max-width: 200px;
 	}
@@ -76,8 +85,15 @@
 		padding-left: 30px;
 
 		label {
+			display: block;
+			padding-left: 28px;
 			font-weight: normal;
 			line-height: 1.2;
+			margin-bottom: 8px;
+
+			& > input {
+				margin: -5px 0.5em 0 -28px;
+			}
 		}
 
 		br {

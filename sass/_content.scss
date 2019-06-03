@@ -102,6 +102,21 @@ body.page {
 	margin-top: 0;
 }
 
+.entry-content {
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	textarea {
+		border: 1px solid $grey-200;
+	}
+
+	select {
+		border: 1px solid $grey-200;
+	}
+}
+
 .entry-meta,
 .entry-footer {
 	margin-bottom: 20px;
@@ -142,5 +157,6 @@ body.page {
 @import 'content/organizers';
 @import 'content/tickets';
 @import 'content/schedule';
+@import 'content/sponsors';
 @import 'content/attendees';
 @import 'content/day-of';

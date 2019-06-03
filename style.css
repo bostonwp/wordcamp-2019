@@ -201,7 +201,8 @@ input[type='submit'],
 input[type='reset'],
 button,
 a.cta-button,
-a.comment-reply-link {
+a.comment-reply-link,
+#tix .tix-submit .tix-checkout-button {
   display: inline-block;
   margin: 0;
   padding: 16px 40px;
@@ -239,7 +240,10 @@ a.comment-reply-link {
   a.cta-button:focus,
   a.comment-reply-link:hover,
   a.comment-reply-link:active,
-  a.comment-reply-link:focus {
+  a.comment-reply-link:focus,
+  #tix .tix-submit .tix-checkout-button:hover,
+  #tix .tix-submit .tix-checkout-button:active,
+  #tix .tix-submit .tix-checkout-button:focus {
     color: #ffffff;
     background: #005F8C;
     border-color: #005F8C; }
@@ -248,7 +252,8 @@ a.comment-reply-link {
   input[type='reset']:focus,
   button:focus,
   a.cta-button:focus,
-  a.comment-reply-link:focus {
+  a.comment-reply-link:focus,
+  #tix .tix-submit .tix-checkout-button:focus {
     outline: none;
     -webkit-box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF;
             box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF; }
@@ -290,14 +295,19 @@ a.comment-reply-link {
     background: #9E2D00; }
 
 .alignwide,
-.googlemaps {
+.googlemaps,
+#tix {
   max-width: 830px;
   margin: 40px -80px; }
   @media (max-width: 600px) {
     .alignwide,
-    .googlemaps {
+    .googlemaps,
+    #tix {
       margin-left: -40px;
       margin-right: -40px; } }
+
+#tix {
+  margin-top: 0; }
 
 .wp-caption,
 .wp-block-image {
@@ -1066,6 +1076,17 @@ body.page .entry-content {
 .entry-summary {
   margin-top: 0; }
 
+.entry-content input[type="text"],
+.entry-content input[type="email"],
+.entry-content input[type="url"],
+.entry-content input[type="password"],
+.entry-content input[type="search"],
+.entry-content textarea {
+  border: 1px solid #BCD0C7; }
+
+.entry-content select {
+  border: 1px solid #BCD0C7; }
+
 .entry-meta,
 .entry-footer {
   margin-bottom: 20px;
@@ -1263,6 +1284,16 @@ body.error404 .search-form {
   margin-right: 30px;
   border-radius: 50%; }
 
+.tix_tickets_table thead,
+.tix-ticket-form thead {
+  background: #452F35;
+  color: #ffffff; }
+
+.tix_tickets_table th, .tix_tickets_table td,
+.tix-ticket-form th,
+.tix-ticket-form td {
+  padding: 3px 10px 5px; }
+
 .tix_tickets_table .tix-column-description,
 .tix-ticket-form .tix-column-description {
   max-width: 200px; }
@@ -1321,8 +1352,13 @@ body.error404 .search-form {
   .tix-attendee-form .tix-right {
     padding-left: 30px; }
     .tix-attendee-form .tix-right label {
+      display: block;
+      padding-left: 28px;
       font-weight: normal;
-      line-height: 1.2; }
+      line-height: 1.2;
+      margin-bottom: 8px; }
+      .tix-attendee-form .tix-right label > input {
+        margin: -5px 0.5em 0 -28px; }
     .tix-attendee-form .tix-right br {
       display: none; }
     .tix-attendee-form .tix-right input[type="text"],
@@ -1551,6 +1587,9 @@ body.page-slug-schedule .site-main {
     .wcpt-time:after {
       display: inline-block;
       margin-left: 5px; } }
+
+.wcorg-sponsor-description a img {
+  display: block; }
 
 body.page-slug-attendees .site-main {
   margin: 0 auto;

@@ -159,7 +159,8 @@ input[type='submit'],
 input[type='reset'],
 button,
 a.cta-button,
-a.comment-reply-link {
+a.comment-reply-link,
+#tix .tix-submit .tix-checkout-button {
 	display: inline-block;
 	margin: 0;
 	padding: 16px 40px;
@@ -182,7 +183,8 @@ a.comment-reply-link {
 }
 
 .alignwide,
-.googlemaps {
+.googlemaps,
+#tix {
 	max-width: $size-post-width;
 	margin: 40px -80px;
 
@@ -190,6 +192,10 @@ a.comment-reply-link {
 		margin-left: -40px;
 		margin-right: -40px;
 	}
+}
+
+#tix {
+	margin-top: 0;
 }
 
 .wp-caption,
