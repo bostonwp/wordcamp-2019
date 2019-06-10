@@ -1591,6 +1591,11 @@ body.page-slug-schedule .site-main {
 .wcorg-sponsor-description a img {
   display: block; }
 
+.wordcamp-block.wordcamp-sponsors .wordcamp-image__featured-image-link {
+  display: block;
+  border-bottom: none;
+  margin-bottom: 24px; }
+
 body.page-slug-attendees .site-main {
   margin: 0 auto;
   max-width: 1160px;
