@@ -1,16 +1,31 @@
-.wcorg-organizers {
-	.wcorg-organizer {
-		clear: both;
-		padding-top: 30px;
-	}
+.wordcamp-block.wordcamp-organizers {
+	padding-left: 0;
 
-	h2 {
-		margin-top: 0;
+	.wordcamp-organizer {
+		position: relative;
+		margin-bottom: 45px;
 	}
 
 	.avatar {
-		float: left;
-		margin-right: 30px;
+		width: 140px;
 		border-radius: 50%;
+		display: block;
+		float: left;
+		margin-right: 1em;
+	}
+
+	@media (min-width: 600px) {
+
+		.wordcamp-organizer {
+			padding-left: 140px + 40px;
+		}
+
+		.avatar {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-right: 0;
+			float: none;
+		}
 	}
 }

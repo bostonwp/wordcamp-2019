@@ -1272,17 +1272,26 @@ body.error404 .search-form {
   .contact-form .grunion-field-label span {
     margin-left: 10px; }
 
-.wcorg-organizers .wcorg-organizer {
-  clear: both;
-  padding-top: 30px; }
-
-.wcorg-organizers h2 {
-  margin-top: 0; }
-
-.wcorg-organizers .avatar {
-  float: left;
-  margin-right: 30px;
-  border-radius: 50%; }
+.wordcamp-block.wordcamp-organizers {
+  padding-left: 0; }
+  .wordcamp-block.wordcamp-organizers .wordcamp-organizer {
+    position: relative;
+    margin-bottom: 45px; }
+  .wordcamp-block.wordcamp-organizers .avatar {
+    width: 140px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 1em; }
+  @media (min-width: 600px) {
+    .wordcamp-block.wordcamp-organizers .wordcamp-organizer {
+      padding-left: 180px; }
+    .wordcamp-block.wordcamp-organizers .avatar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-right: 0;
+      float: none; } }
 
 .tix_tickets_table thead,
 .tix-ticket-form thead {
