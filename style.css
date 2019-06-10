@@ -1597,20 +1597,22 @@ body.page-slug-schedule .site-main {
   margin-bottom: 24px; }
 
 body.page-slug-attendees .site-main {
+  max-width: unset; }
+
+body.page-slug-attendees .entry-content {
   margin: 0 auto;
   max-width: 1160px;
   padding-left: 80px;
   padding-right: 80px; }
   @media (max-width: 600px) {
-    body.page-slug-attendees .site-main {
+    body.page-slug-attendees .entry-content {
       padding-left: 40px;
       padding-right: 40px; } }
 
 .page-slug-attendees #tix-attendees li,
 .page-slug-sponsors #tix-attendees li {
   height: auto;
-  text-align: center;
-  padding-top: 5px; }
+  text-align: center; }
 
 .page-slug-attendees #tix-attendees .avatar,
 .page-slug-sponsors #tix-attendees .avatar {
@@ -1643,17 +1645,18 @@ body.page-slug-attendees .site-main {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 130px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 4px auto 0;
   font-size: 16px;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: none;
+  text-decoration: underline; }
 
 .page-slug-attendees #tix-attendees .tix-attendee-list,
 .page-slug-sponsors #tix-attendees .tix-attendee-list {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px 0;
+  grid-gap: 40px 0;
   padding: 0; }
   .page-slug-attendees #tix-attendees .tix-attendee-list li,
   .page-slug-sponsors #tix-attendees .tix-attendee-list li {
