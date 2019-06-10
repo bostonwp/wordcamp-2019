@@ -258,7 +258,7 @@ a.comment-reply-link,
     -webkit-box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF;
             box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF; }
 
-.entry-content .wp-block-button__link {
+.entry-content .wp-block-button .wp-block-button__link {
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -276,23 +276,31 @@ a.comment-reply-link,
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  .entry-content .wp-block-button__link:hover, .entry-content .wp-block-button__link:active, .entry-content .wp-block-button__link:focus {
+  .entry-content .wp-block-button .wp-block-button__link:hover, .entry-content .wp-block-button .wp-block-button__link:active, .entry-content .wp-block-button .wp-block-button__link:focus {
     color: #ffffff;
     background: #005F8C;
     border-color: #005F8C; }
-  .entry-content .wp-block-button__link:focus {
+  .entry-content .wp-block-button .wp-block-button__link:focus {
     outline: none;
     -webkit-box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF;
             box-shadow: inset 3px 0 0 0 #BCEFFF, inset -3px 0 0 0 #BCEFFF, inset 0 -3px 0 0 #BCEFFF, inset 0 3px 0 0 #BCEFFF; }
-  .entry-content .wp-block-button__link:hover, .entry-content .wp-block-button__link:active, .entry-content .wp-block-button__link:focus {
+  .entry-content .wp-block-button .wp-block-button__link:hover, .entry-content .wp-block-button .wp-block-button__link:active, .entry-content .wp-block-button .wp-block-button__link:focus {
     background: #9E2D00;
     border-color: #9E2D00; }
-  .entry-content .wp-block-button__link:focus {
+  .entry-content .wp-block-button .wp-block-button__link:focus {
     -webkit-box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66;
             box-shadow: inset 3px 0 0 0 #FA8F66, inset -3px 0 0 0 #FA8F66, inset 0 -3px 0 0 #FA8F66, inset 0 3px 0 0 #FA8F66; }
-  .entry-content .wp-block-button__link:hover, .entry-content .wp-block-button__link:active, .entry-content .wp-block-button__link:focus {
+  .entry-content .wp-block-button .wp-block-button__link:hover, .entry-content .wp-block-button .wp-block-button__link:active, .entry-content .wp-block-button .wp-block-button__link:focus {
     color: #ffffff;
     background: #9E2D00; }
+
+.entry-content .wp-block-button.is-style-outline .wp-block-button__link {
+  color: #DE541E;
+  background-color: transparent;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0; }
 
 .alignwide,
 .googlemaps,
@@ -419,6 +427,12 @@ hr,
 
 .has-large-font-size {
   line-height: 1.4; }
+
+.wp-block-table td, .wp-block-table th {
+  padding: 8px 16px; }
+
+.wp-block-table.is-style-stripes tr:nth-child(odd) {
+  background-color: rgba(188, 208, 199, 0.3); }
 
 .site-header {
   position: relative;

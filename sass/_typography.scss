@@ -172,13 +172,27 @@ a.comment-reply-link,
 	@include uppercase( 1.6 );
 }
 
-.entry-content .wp-block-button__link {
-	@include button-secondary;
-	@include uppercase( 1.8 );
+.entry-content .wp-block-button {
+	.wp-block-button__link {
+		@include button-secondary;
+		@include uppercase( 1.8 );
 
-	@include hover-state {
-		color: $white;
-		background: $orange-600;
+		@include hover-state {
+			color: $white;
+			background: $orange-600;
+		}
+	}
+
+	&.is-style-outline {
+
+		.wp-block-button__link {
+			color: $orange-400;
+			background-color: transparent;
+			font-family: $font-body;
+			font-weight: 700;
+			text-transform: none;
+			letter-spacing: 0;
+		}
 	}
 }
 
@@ -301,4 +315,16 @@ hr,
 
 .has-large-font-size {
 	line-height: 1.4;
+}
+
+.wp-block-table {
+	td, th {
+		padding: 8px 16px;
+	}
+
+	&.is-style-stripes {
+		tr:nth-child(odd) {
+			background-color: rgba( $grey-200, 0.3 );
+		}
+	}
 }
