@@ -6,21 +6,24 @@ body.page-slug-schedule {
 
 .wcpt-schedule {
 	margin-bottom: 60px;
-	border-bottom: 2px solid currentColor;
+	border-bottom: 2px solid $grey-400;
 
 	th {
 		padding: 20px 15px 5px;
-		border-bottom: 2px solid currentColor;
-		color: $color-text;
-		font-weight: 900;
-		text-align: left;
+		border-bottom: 2px solid $grey-400;
+		color: $color-meta;
+		font-family: $font-header;
+		font-weight: 700;
+		@include font-size( $font-size-level-3 );
+		line-height: 1.2;
+		text-align: center;
 	}
 
 	td {
 		@include font-size( 1.6 );
 		box-sizing: border-box;
 		padding: 20px 15px;
-		border: 2px solid currentColor;
+		border: 2px solid $grey-400;
 		border-bottom: none;
 
 		@media screen and (min-width: 701px) {
@@ -44,28 +47,34 @@ body.page-slug-schedule {
 			border: none;
 
 			&:last-of-type {
-				border-right: 2px solid currentColor;
-			}
-		}
-
-		&.wcb-favourite-session {
-			a.fav-session-button {
+				border-right: 2px solid $grey-400;
 			}
 		}
 
 		div.wcb-session-favourite-icon a.fav-session-button {
+			border: none;
+			color: $grey-200 !important;
+
 			&:hover {
+				color: $blue-600 !important;
+			}
+		}
+
+		&.wcb-favourite-session {
+			background: transparent;
+
+			div.wcb-session-favourite-icon a.fav-session-button {
+				color: $orange-400 !important;
 			}
 		}
 	}
 
-	.global-session td:not(.wcpt-time) {
-		text-align: center;
+	.wcpt-time {
+		background: rgba( $grey-400, 0.2 );
 	}
 
-	.wcpt-session-title {
-		font-weight: 600;
-		text-decoration: underline;
+	.global-session td:not(.wcpt-time) {
+		text-align: center;
 	}
 
 	.wcpt-session-speakers {
@@ -73,7 +82,12 @@ body.page-slug-schedule {
 		margin-top: 8px;
 
 		a {
-			color: $color-text;
+			color: $color-meta;
+			border-bottom: none;
+
+			@include hover-state {
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -115,12 +129,13 @@ body.page-slug-schedule {
 	// Add track labels to each grid-cell
 	td[class*='wcb-track']:before {
 		display: block;
-		margin: -20px -15px 5px;
+		margin: -20px -15px 10px;
 		padding: 10px 15px;
 		@include uppercase( 1.1, 1 );
 		line-height: 1;
 		color: $color-text;
-		border: none;
+		background: rgba( $grey-400, 0.2 );
+		border-bottom: 2px solid $grey-400;
 		text-align: center;
 	}
 

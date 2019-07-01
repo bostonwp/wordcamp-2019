@@ -212,6 +212,26 @@ a.comment-reply-link,
 	margin-top: 0;
 }
 
+.alignfull {
+	max-width: $size-main-width;
+	margin: 40px -245px;
+
+	@media ( max-width: $size-main-width ) {
+		margin-left: -160px;
+		margin-right: -160px;
+	}
+
+	@media ( max-width: 995px ) {
+		margin-left: -80px;
+		margin-right: -80px;
+	}
+
+	@media ( max-width: $size-post-width ) {
+		margin-left: -40px;
+		margin-right: -40px;
+	}
+}
+
 .wp-caption,
 .wp-block-image {
 	border: none;
