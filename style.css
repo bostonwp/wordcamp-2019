@@ -1758,6 +1758,27 @@ body.page-slug-attendees .entry-content {
   .page-slug-sponsors #tix-attendees .tix-attendee-list {
     grid-template-columns: repeat(2, 1fr); } }
 
+body.page-slug-speakers .wordcamp-speakers > li {
+  margin-bottom: 45px;
+  text-align: center; }
+
+body.page-slug-speakers .wordcamp-speakers__title {
+  font-family: "acumin-pro", sans-serif;
+  color: #452F35;
+  font-weight: 700;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.2; }
+  body.page-slug-speakers .wordcamp-speakers__title a {
+    border-color: transparent; }
+    body.page-slug-speakers .wordcamp-speakers__title a:hover, body.page-slug-speakers .wordcamp-speakers__title a:active, body.page-slug-speakers .wordcamp-speakers__title a:focus {
+      border-color: #DE541E; }
+
+body.page-slug-speakers .avatar {
+  width: 140px;
+  border-radius: 50%;
+  margin: 0 auto; }
+
 body.single-wcb_speaker .avatar {
   width: 140px;
   border-radius: 50%;
