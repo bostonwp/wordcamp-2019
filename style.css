@@ -1487,6 +1487,8 @@ body.page-slug-schedule .site-main {
       border: none; }
       .wcpt-schedule td.wcpt-session-empty:last-of-type {
         border-right: 2px solid #A9B2AC; }
+      .wcpt-schedule td.wcpt-session-empty.wcpt-session-empty + .wcpt-session-empty {
+        border-left: 2px solid #A9B2AC; }
     .wcpt-schedule td div.wcb-session-favourite-icon a.fav-session-button {
       border: none;
       color: #BCD0C7 !important; }
@@ -1568,6 +1570,10 @@ body.page-slug-schedule .site-main {
       content: 'Intro to WordPress'; }
     .wcpt-schedule .wcb-track-lightning-talks:before {
       content: 'Lightning Talks'; }
+    .wcpt-schedule .wcb-track-marketing-pr:before {
+      content: 'Marketing & PR'; }
+    .wcpt-schedule .wcb-track-other:before {
+      content: 'Everyone'; }
     .wcpt-schedule .wcb-track-site-builders:before {
       content: 'Site Builders'; } }
 

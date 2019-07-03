@@ -49,6 +49,10 @@ body.page-slug-schedule {
 			&:last-of-type {
 				border-right: 2px solid $grey-400;
 			}
+
+			&.wcpt-session-empty + .wcpt-session-empty {
+				border-left: 2px solid $grey-400;
+			}
 		}
 
 		div.wcb-session-favourite-icon a.fav-session-button {
@@ -174,6 +178,12 @@ body.page-slug-schedule {
 		}
 		.wcb-track-lightning-talks:before {
 			content: 'Lightning Talks'
+		}
+		.wcb-track-marketing-pr:before {
+			content: 'Marketing & PR'
+		}
+		.wcb-track-other:before {
+			content: 'Everyone'
 		}
 		.wcb-track-site-builders:before {
 			content: 'Site Builders'
