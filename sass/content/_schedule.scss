@@ -75,6 +75,7 @@ body.page-slug-schedule {
 
 	.wcpt-time {
 		background: rgba( $grey-400, 0.2 );
+		vertical-align: middle;
 	}
 
 	.global-session td:not(.wcpt-time) {
@@ -188,6 +189,11 @@ body.page-slug-schedule {
 		.wcb-track-site-builders:before {
 			content: 'Site Builders'
 		}
+
+		.wcb-session-lunch {
+			padding-top: 3em;
+			padding-bottom: 3em;
+		}
 	}
 }
 
@@ -200,9 +206,9 @@ body.page-slug-schedule {
 		content: '– 9:00 am';
 	}
 	.wcpt-schedule-saturday .wcpt-time-900am & {
-		content: '– 9:10 am';
+		content: '– 9:20 am';
 	}
-	.wcpt-schedule-saturday .wcpt-time-910am & {
+	.wcpt-schedule-saturday .wcpt-time-920am & {
 		content: '– 10:00 am';
 	}
 	.wcpt-schedule-saturday .wcpt-time-1000am & {
@@ -224,40 +230,28 @@ body.page-slug-schedule {
 		content: '– 12:30 pm';
 	}
 	.wcpt-schedule-saturday .wcpt-time-1230pm & {
-		content: '– 1:30 pm';
+		content: '– 1:40 pm';
 	}
-	.wcpt-schedule-saturday .wcpt-time-130pm & {
-		content: '– 1:45 pm';
-	}
-	.wcpt-schedule-saturday .wcpt-time-145pm & {
-		content: '– 2:10 pm';
-	}
-	.wcpt-schedule-saturday .wcpt-time-210pm & {
+	.wcpt-schedule-saturday .wcpt-time-140pm & {
 		content: '– 2:20 pm';
 	}
-	.wcpt-schedule-saturday .wcpt-time-220pm & {
-		content: '– 3:00 pm';
-	}
-	.wcpt-schedule-saturday .wcpt-time-300pm & {
+	.wcpt-schedule-saturday .wcpt-time-230pm & {
 		content: '– 3:10 pm';
 	}
 	.wcpt-schedule-saturday .wcpt-time-310pm & {
-		content: '– 3:50 pm';
+		content: '– 3:20 pm';
 	}
-	.wcpt-schedule-saturday .wcpt-time-350pm & {
-		content: '– 4:10 pm';
+	.wcpt-schedule-saturday .wcpt-time-320pm & {
+		content: '– 4:00 pm';
 	}
-	.wcpt-schedule-saturday .wcpt-time-410pm & {
-		content: '– 4:50 pm';
+	.wcpt-schedule-saturday .wcpt-time-400pm & {
+		content: '– 4:20 pm';
 	}
-	.wcpt-schedule-saturday .wcpt-time-450pm & {
+	.wcpt-schedule-saturday .wcpt-time-420pm & {
 		content: '– 5:00 pm';
 	}
-	.wcpt-schedule-saturday .wcpt-time-500pm & {
-		content: '– 5:40 pm';
-	}
-	.wcpt-schedule-saturday .wcpt-time-545pm & {
-		content: '– 9:00 pm';
+	.wcpt-schedule-saturday .wcpt-time-630pm & {
+		content: '– 10:30 pm';
 	}
 
 	// Sunday
@@ -271,6 +265,9 @@ body.page-slug-schedule {
 		content: '– 12:20 pm';
 	}
 	.wcpt-schedule-sunday .wcpt-time-1220pm & {
+		content: '– 12:40 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-1240pm & {
 		content: '– 1:00 pm';
 	}
 	.wcpt-schedule-sunday .wcpt-time-100pm & {
