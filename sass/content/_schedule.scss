@@ -141,9 +141,13 @@ body.page-slug-schedule {
 
 	// Large screen only, smaller screens go single col and show all track names from an attribute
 	@media screen and (min-width: 701px) {
+		.wcb-track-accessibility:before {
+			content: 'Accessibility'
+		}
 		.wcb-track-advanced-developers:before {
 			content: 'Advanced Developers'
 		}
+		.wcb-track-business-freelancing:before,
 		.wcb-track-business:before {
 			content: 'Business & Freelancing'
 		}
@@ -152,6 +156,9 @@ body.page-slug-schedule {
 		}
 		.wcb-track-content:before {
 			content: 'Content & Social Media'
+		}
+		.wcb-track-designers:before {
+			content: 'Designers'
 		}
 		.wcb-track-developers:before {
 			content: 'Developers'
@@ -170,9 +177,6 @@ body.page-slug-schedule {
 		}
 		.wcb-track-site-builders:before {
 			content: 'Site Builders'
-		}
-		.wcb-track-workshops:before {
-			content: 'Workshops'
 		}
 	}
 }

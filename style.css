@@ -1545,14 +1545,19 @@ body.page-slug-schedule .site-main {
     border-bottom: 2px solid #A9B2AC;
     text-align: center; }
   @media screen and (min-width: 701px) {
+    .wcpt-schedule .wcb-track-accessibility:before {
+      content: 'Accessibility'; }
     .wcpt-schedule .wcb-track-advanced-developers:before {
       content: 'Advanced Developers'; }
+    .wcpt-schedule .wcb-track-business-freelancing:before,
     .wcpt-schedule .wcb-track-business:before {
       content: 'Business & Freelancing'; }
     .wcpt-schedule .wcb-track-community:before {
       content: 'Community'; }
     .wcpt-schedule .wcb-track-content:before {
       content: 'Content & Social Media'; }
+    .wcpt-schedule .wcb-track-designers:before {
+      content: 'Designers'; }
     .wcpt-schedule .wcb-track-developers:before {
       content: 'Developers'; }
     .wcpt-schedule .wcb-track-gutenberg:before {
@@ -1564,9 +1569,7 @@ body.page-slug-schedule .site-main {
     .wcpt-schedule .wcb-track-lightning-talks:before {
       content: 'Lightning Talks'; }
     .wcpt-schedule .wcb-track-site-builders:before {
-      content: 'Site Builders'; }
-    .wcpt-schedule .wcb-track-workshops:before {
-      content: 'Workshops'; } }
+      content: 'Site Builders'; } }
 
 .wcpt-time:after {
   display: inline-block; }
