@@ -50,7 +50,7 @@ body.page-slug-schedule {
 				border-right: 2px solid $grey-400;
 			}
 
-			&.wcpt-session-empty + .wcpt-session-empty {
+			& + .wcpt-session-empty {
 				border-left: 2px solid $grey-400;
 			}
 		}

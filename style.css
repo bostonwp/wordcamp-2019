@@ -1487,7 +1487,7 @@ body.page-slug-schedule .site-main {
       border: none; }
       .wcpt-schedule td.wcpt-session-empty:last-of-type {
         border-right: 2px solid #A9B2AC; }
-      .wcpt-schedule td.wcpt-session-empty.wcpt-session-empty + .wcpt-session-empty {
+      .wcpt-schedule td.wcpt-session-empty + .wcpt-session-empty {
         border-left: 2px solid #A9B2AC; }
     .wcpt-schedule td div.wcb-session-favourite-icon a.fav-session-button {
       border: none;
@@ -1757,6 +1757,13 @@ body.page-slug-attendees .entry-content {
   .page-slug-attendees #tix-attendees .tix-attendee-list,
   .page-slug-sponsors #tix-attendees .tix-attendee-list {
     grid-template-columns: repeat(2, 1fr); } }
+
+body.single-wcb_speaker .avatar {
+  width: 140px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin-right: 1em; }
 
 body.page-template-page-day-of .site-main {
   margin: 0 auto;
