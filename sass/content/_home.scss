@@ -1,4 +1,5 @@
-body.home {
+// Home, but not either of these page IDs
+body.home:not(.page-id-2309):not(.wp-custom-logo) {
 	// Local variables
 	$page-bg: $brown;
 	$card-bg: $grey-100;

@@ -71,6 +71,16 @@ body.page-slug-schedule {
 				color: $orange-400 !important;
 			}
 		}
+
+		@media screen and (max-width: 700px) {
+			a, a:visited {
+				border-bottom: none;
+
+				@include hover-state {
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 
 	.wcpt-time {
@@ -140,6 +150,7 @@ body.page-slug-schedule {
 		line-height: 1;
 		color: $color-text;
 		background: rgba( $grey-400, 0.2 );
+		border-top: none;
 		border-bottom: 2px solid $grey-400;
 		text-align: center;
 	}
