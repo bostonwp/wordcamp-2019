@@ -1144,10 +1144,10 @@ body.page .entry-content {
     content: '\2192';
     margin-left: 4px; }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) #content-widgets {
+body.home:not(.page-id-2309):not(.page-id-1648) #content-widgets {
   background: #452F35; }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) #content-widget-1 {
+body.home:not(.page-id-2309):not(.page-id-1648) #content-widget-1 {
   margin-top: 0;
   padding-bottom: 120px;
   color: #ffffff;
@@ -1157,21 +1157,21 @@ body.home:not(.page-id-2309):not(.wp-custom-logo) #content-widget-1 {
   background-size: 800px auto;
   background-repeat: no-repeat;
   background-position: 48vw center; }
-  body.home:not(.page-id-2309):not(.wp-custom-logo) #content-widget-1 .widget {
+  body.home:not(.page-id-2309):not(.page-id-1648) #content-widget-1 .widget {
     margin: 0 auto;
     max-width: 1160px;
     padding-left: 80px;
     padding-right: 80px;
     padding: 80px 80px 0; }
     @media (max-width: 600px) {
-      body.home:not(.page-id-2309):not(.wp-custom-logo) #content-widget-1 .widget {
+      body.home:not(.page-id-2309):not(.page-id-1648) #content-widget-1 .widget {
         padding-left: 40px;
         padding-right: 40px; } }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .site-content {
+body.home:not(.page-id-2309):not(.page-id-1648) .site-content {
   background: #452F35; }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .content-area {
+body.home:not(.page-id-2309):not(.page-id-1648) .content-area {
   margin: 0 auto;
   max-width: 1160px;
   padding-left: 80px;
@@ -1180,71 +1180,71 @@ body.home:not(.page-id-2309):not(.wp-custom-logo) .content-area {
   padding-right: 300px;
   position: relative; }
   @media (max-width: 600px) {
-    body.home:not(.page-id-2309):not(.wp-custom-logo) .content-area {
+    body.home:not(.page-id-2309):not(.page-id-1648) .content-area {
       padding-left: 40px;
       padding-right: 40px; } }
   @media (max-width: 782px) {
-    body.home:not(.page-id-2309):not(.wp-custom-logo) .content-area {
+    body.home:not(.page-id-2309):not(.page-id-1648) .content-area {
       padding-right: 80px; } }
   @media (max-width: 600px) {
-    body.home:not(.page-id-2309):not(.wp-custom-logo) .content-area {
+    body.home:not(.page-id-2309):not(.page-id-1648) .content-area {
       padding-right: 40px; } }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .site-main {
+body.home:not(.page-id-2309):not(.page-id-1648) .site-main {
   margin: 0;
   background: #F5F9F7; }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .hentry {
+body.home:not(.page-id-2309):not(.page-id-1648) .hentry {
   padding: 0; }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .entry-header {
+body.home:not(.page-id-2309):not(.page-id-1648) .entry-header {
   display: none; }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .entry-content {
+body.home:not(.page-id-2309):not(.page-id-1648) .entry-content {
   position: relative;
   padding-right: 140px; }
   @media (max-width: 782px) {
-    body.home:not(.page-id-2309):not(.wp-custom-logo) .entry-content {
+    body.home:not(.page-id-2309):not(.page-id-1648) .entry-content {
       padding-right: 80px; } }
   @media (max-width: 600px) {
-    body.home:not(.page-id-2309):not(.wp-custom-logo) .entry-content {
+    body.home:not(.page-id-2309):not(.page-id-1648) .entry-content {
       padding-right: 40px; } }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-spacer.full-width-spacer {
+body.home:not(.page-id-2309):not(.page-id-1648) .wp-block-spacer.full-width-spacer {
   margin: 140px -141px 80px -81px;
   background: #452F35; }
   @media (max-width: 782px) {
-    body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-spacer.full-width-spacer {
+    body.home:not(.page-id-2309):not(.page-id-1648) .wp-block-spacer.full-width-spacer {
       margin-right: -81px; } }
   @media (max-width: 600px) {
-    body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-spacer.full-width-spacer {
+    body.home:not(.page-id-2309):not(.page-id-1648) .wp-block-spacer.full-width-spacer {
       margin-right: -41px; } }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .home-image-1,
-body.home:not(.page-id-2309):not(.wp-custom-logo) .home-image-2 {
+body.home:not(.page-id-2309):not(.page-id-1648) .home-image-1,
+body.home:not(.page-id-2309):not(.page-id-1648) .home-image-2 {
   border: 3px solid #ffffff;
   -webkit-box-shadow: 0 0 20px rgba(69, 47, 53, 0.1);
           box-shadow: 0 0 20px rgba(69, 47, 53, 0.1); }
 
 @media (min-width: 1140px) {
-  body.home:not(.page-id-2309):not(.wp-custom-logo) .home-image-1,
-  body.home:not(.page-id-2309):not(.wp-custom-logo) .home-image-2 {
+  body.home:not(.page-id-2309):not(.page-id-1648) .home-image-1,
+  body.home:not(.page-id-2309):not(.page-id-1648) .home-image-2 {
     position: absolute;
     top: 150px;
     right: -360px;
     -webkit-transform: scale(0.75) rotate(15deg);
             transform: scale(0.75) rotate(15deg); }
-  body.home:not(.page-id-2309):not(.wp-custom-logo) .home-image-2 {
+  body.home:not(.page-id-2309):not(.page-id-1648) .home-image-2 {
     top: 400px;
     -webkit-transform: scale(0.75) rotate(-15deg);
             transform: scale(0.75) rotate(-15deg); } }
 
-body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-latest-posts {
+body.home:not(.page-id-2309):not(.page-id-1648) .wp-block-latest-posts {
   list-style: none;
   padding-left: 0; }
-  body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-latest-posts li {
+  body.home:not(.page-id-2309):not(.page-id-1648) .wp-block-latest-posts li {
     margin-bottom: 40px; }
-  body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-latest-posts a {
+  body.home:not(.page-id-2309):not(.page-id-1648) .wp-block-latest-posts a {
     display: inline-block;
     margin-bottom: 16px;
     font-family: "acumin-pro-condensed", sans-serif;
@@ -1255,10 +1255,10 @@ body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-latest-posts {
     border-bottom: none;
     color: #898980; }
     @media (max-width: 480px) {
-      body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-latest-posts a {
+      body.home:not(.page-id-2309):not(.page-id-1648) .wp-block-latest-posts a {
         font-size: 32.4px;
         font-size: 3.24rem; } }
-  body.home:not(.page-id-2309):not(.wp-custom-logo) .wp-block-latest-posts time {
+  body.home:not(.page-id-2309):not(.page-id-1648) .wp-block-latest-posts time {
     font-family: "acumin-pro", sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
