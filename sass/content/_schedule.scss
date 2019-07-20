@@ -8,6 +8,12 @@ body.page-slug-schedule {
 	margin-bottom: 60px;
 	border-bottom: 2px solid $grey-400;
 
+	tr {
+		@media screen and (max-width: 700px) {
+			border-color: $grey-400 !important;
+		}
+	}
+
 	th {
 		padding: 20px 15px 5px;
 		border-bottom: 2px solid $grey-400;
@@ -41,6 +47,14 @@ body.page-slug-schedule {
 			&:last-of-type {
 				border-bottom: none;
 			}
+
+			a, a:visited {
+				border-bottom: none;
+
+				@include hover-state {
+					text-decoration: underline;
+				}
+			}
 		}
 
 		&.wcpt-session-empty {
@@ -69,16 +83,6 @@ body.page-slug-schedule {
 
 			div.wcb-session-favourite-icon a.fav-session-button {
 				color: $orange-400 !important;
-			}
-		}
-
-		@media screen and (max-width: 700px) {
-			a, a:visited {
-				border-bottom: none;
-
-				@include hover-state {
-					text-decoration: underline;
-				}
 			}
 		}
 	}

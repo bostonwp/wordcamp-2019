@@ -1449,6 +1449,9 @@ body.page-slug-schedule .site-main {
 .wcpt-schedule {
   margin-bottom: 60px;
   border-bottom: 2px solid #A9B2AC; }
+  @media screen and (max-width: 700px) {
+    .wcpt-schedule tr {
+      border-color: #A9B2AC !important; } }
   .wcpt-schedule th {
     padding: 20px 15px 5px;
     border-bottom: 2px solid #A9B2AC;
@@ -1482,7 +1485,11 @@ body.page-slug-schedule .site-main {
       .wcpt-schedule td {
         margin-bottom: 0; }
         .wcpt-schedule td:last-of-type {
-          border-bottom: none; } }
+          border-bottom: none; }
+        .wcpt-schedule td a, .wcpt-schedule td a:visited {
+          border-bottom: none; }
+          .wcpt-schedule td a:hover, .wcpt-schedule td a:active, .wcpt-schedule td a:focus, .wcpt-schedule td a:visited:hover, .wcpt-schedule td a:visited:active, .wcpt-schedule td a:visited:focus {
+            text-decoration: underline; } }
     .wcpt-schedule td.wcpt-session-empty {
       border: none; }
       .wcpt-schedule td.wcpt-session-empty:last-of-type {
@@ -1498,11 +1505,6 @@ body.page-slug-schedule .site-main {
       background: transparent; }
       .wcpt-schedule td.wcb-favourite-session div.wcb-session-favourite-icon a.fav-session-button {
         color: #DE541E !important; }
-    @media screen and (max-width: 700px) {
-      .wcpt-schedule td a, .wcpt-schedule td a:visited {
-        border-bottom: none; }
-        .wcpt-schedule td a:hover, .wcpt-schedule td a:active, .wcpt-schedule td a:focus, .wcpt-schedule td a:visited:hover, .wcpt-schedule td a:visited:active, .wcpt-schedule td a:visited:focus {
-          text-decoration: underline; } }
   .wcpt-schedule .wcpt-time {
     background: rgba(169, 178, 172, 0.2);
     vertical-align: middle; }
