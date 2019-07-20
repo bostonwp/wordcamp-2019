@@ -5,7 +5,7 @@
 
 	@if ( $sizeValue > 5.6) {
 		@media ( max-width: 480px ) {
-			$value: $sizeValue * 0.7;
+			$value: $sizeValue * 0.6;
 			font-size: ($value * 10) + px;
 			font-size: $value + rem;
 		}

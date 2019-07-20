@@ -62,8 +62,8 @@ a, a:visited {
   font-size: 10rem; }
   @media (max-width: 480px) {
     .entry-title {
-      font-size: 70px;
-      font-size: 7rem; } }
+      font-size: 60px;
+      font-size: 6rem; } }
 
 .entry-content h1, .entry-content h2 {
   margin: 30px 0 15px;
@@ -75,8 +75,8 @@ a, a:visited {
   line-height: 1; }
   @media (max-width: 480px) {
     .entry-content h1 {
-      font-size: 70px;
-      font-size: 7rem; } }
+      font-size: 60px;
+      font-size: 6rem; } }
 
 .entry-content h2 {
   color: #0073AA;
@@ -438,8 +438,8 @@ hr,
   line-height: 1; }
   @media (max-width: 480px) {
     .wp-block-cover .wp-block-cover-text {
-      font-size: 70px;
-      font-size: 7rem; } }
+      font-size: 60px;
+      font-size: 6rem; } }
 
 .has-large-font-size {
   line-height: 1.4; }
@@ -586,8 +586,8 @@ body.home #content-widget-1 .level-1 {
   font-weight: 400; }
   @media (max-width: 480px) {
     body.home #content-widget-1 .level-1 {
-      font-size: 70px;
-      font-size: 7rem; } }
+      font-size: 60px;
+      font-size: 6rem; } }
 
 body.home #content-widget-1 .level-2 {
   font-size: 50px;
@@ -1011,8 +1011,8 @@ body.page .entry-title {
       left: 0; } }
   @media (max-width: 480px) {
     body.page .entry-title {
-      font-size: 70px;
-      font-size: 7rem; } }
+      font-size: 60px;
+      font-size: 6rem; } }
   body.page .entry-title:before {
     background-image: url("https://svg.redradar.net/boston-2019/w.svg");
     background-size: 1000px auto;
@@ -1073,8 +1073,8 @@ body.page .entry-content {
       left: 0; } }
   @media (max-width: 480px) {
     .page-title {
-      font-size: 70px;
-      font-size: 7rem; } }
+      font-size: 60px;
+      font-size: 6rem; } }
   .page-title:before {
     background-image: url("https://svg.redradar.net/boston-2019/w.svg");
     background-size: 1000px auto;
