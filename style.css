@@ -1792,6 +1792,26 @@ body.single-wcb_speaker .avatar {
   float: left;
   margin-right: 1em; }
 
+body.page-id-2309 .entry-title,
+body.page-id-1648 .entry-title {
+  padding: 60px 0 340px;
+  text-align: center; }
+  @media (max-width: 600px) {
+    body.page-id-2309 .entry-title,
+    body.page-id-1648 .entry-title {
+      padding-bottom: 220px; } }
+  body.page-id-2309 .entry-title:before,
+  body.page-id-1648 .entry-title:before {
+    background-position: 50% 240px; }
+    @media (max-width: 600px) {
+      body.page-id-2309 .entry-title:before,
+      body.page-id-1648 .entry-title:before {
+        background-size: 500px auto; } }
+    @media (max-width: 600px) {
+      body.page-id-2309 .entry-title:before,
+      body.page-id-1648 .entry-title:before {
+        background-position: 50% 180px; } }
+
 #comments {
   padding-left: 80px;
   padding-right: 80px; }
