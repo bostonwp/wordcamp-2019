@@ -483,14 +483,14 @@ hr,
 
 .page-navigation-container {
   margin-left: 40px; }
-  .page-navigation-container .menu-primary-container > ul {
+  .page-navigation-container .menu-menu-container > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    .page-navigation-container .menu-primary-container > ul > li {
+    .page-navigation-container .menu-menu-container > ul > li {
       float: none; }
   .page-navigation-container a {
     padding: 16px 20px;
@@ -547,10 +547,10 @@ hr,
     display: none; }
   .page-navigation-container {
     margin-left: 0; }
-    .page-navigation-container .menu-primary-container > ul {
+    .page-navigation-container .menu-menu-container > ul {
       display: none;
       margin-top: 40px; }
-    .page-navigation-container.toggled-on .menu-primary-container > ul {
+    .page-navigation-container.toggled-on .menu-menu-container > ul {
       display: block; }
     .page-navigation-container li {
       float: none; }

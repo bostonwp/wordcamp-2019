@@ -25,7 +25,7 @@
 .page-navigation-container {
 	margin-left: 40px;
 
-	.menu-primary-container > ul {
+	.menu-menu-container > ul {
 		display: flex;
 		justify-content: flex-end;
 
@@ -115,12 +115,12 @@
 	.page-navigation-container {
 		margin-left: 0;
 
-		.menu-primary-container > ul {
+		.menu-menu-container > ul {
 			display: none;
 			margin-top: 40px;
 		}
 
-		&.toggled-on .menu-primary-container > ul {
+		&.toggled-on .menu-menu-container > ul {
 			display: block;
 		}
 
