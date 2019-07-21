@@ -1628,12 +1628,12 @@ body.page-slug-schedule .site-main {
   .wcpt-schedule-sunday .wcpt-time-1100am .wcpt-time:after {
     content: '– 11:30 am'; }
   .wcpt-schedule-sunday .wcpt-time-1130am .wcpt-time:after {
+    content: '– 11:50 pm'; }
+  .wcpt-schedule-sunday .wcpt-time-1150am .wcpt-time:after {
     content: '– 12:10 pm'; }
   .wcpt-schedule-sunday .wcpt-time-1210pm .wcpt-time:after {
     content: '– 12:20 pm'; }
   .wcpt-schedule-sunday .wcpt-time-1220pm .wcpt-time:after {
-    content: '– 12:40 pm'; }
-  .wcpt-schedule-sunday .wcpt-time-1240pm .wcpt-time:after {
     content: '– 1:00 pm'; }
   .wcpt-schedule-sunday .wcpt-time-100pm .wcpt-time:after {
     content: '– 1:10 pm'; }
